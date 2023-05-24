@@ -1,4 +1,46 @@
 body {
-    background-color: rgb(121, 224, 237);
-    margin: 0
+    background-color: rgb(205, 148, 252);
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: vh /*viewport height*/
   }
+.header{
+  position: relative; 
+  width: 100%;
+  height: 60vh;
+  background-image: url("images/index_backdrop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: aliceblue; /*font colour within header*/
+}
+#nameTitle{
+  position: absolute;
+  top: 40%; /*relative of parent header container instead of browser*/
+  height: 40%;
+  width: 60%;
+  background: rgba(52, 21, 21, .4) /*fourth value is alpha or opacity*/
+}
+.navBar{
+  position: absolute;
+  top: 50%; /*relative of parent header container instead of browser*/
+  right: 0%;
+  height: 40%;
+  width: 50%;
+  background: rgba(52, 21, 21, .2);
+}
+#about{ /*nav bar components relative of parent nav bar container*/
+  position: absolute;
+  left: 30%;
+
+}
+#portfolio{
+  position: absolute;
+  left: 50%;
+  top: 30%;
+}
+#personal{
+  position: absolute;
+  right: 10%;
+  top: 50%
+}
+
