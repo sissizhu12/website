@@ -1,46 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
     background-color: rgb(205, 148, 252);
-    margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    height: vh /*viewport height*/
+    height: vh; /*viewport height*/
   }
 .header{
   position: relative; 
   width: 100%;
-  height: 60vh;
+  height: 100vh;
   background-image: url("images/index_backdrop.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center; /*horizontally and vertically centered */
   color: aliceblue; /*font colour within header*/
+}
+#nameText{
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  font-size: 6vw;
+  letter-spacing: 4px;
+}
+#designer{
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  font-size: 2.5vw;
+  letter-spacing: 2px;
+  line-height: 3vh;
 }
 #nameTitle{
   position: absolute;
-  top: 40%; /*relative of parent header container instead of browser*/
-  height: 40%;
+  top: 55%; /*relative of parent header container instead of browser*/
+  height: 30%;
   width: 60%;
   background: rgba(52, 21, 21, .4) /*fourth value is alpha or opacity*/
 }
 .navBar{
   position: absolute;
-  top: 50%; /*relative of parent header container instead of browser*/
+  font-size: 3.5vw;
+  top: 65%; /*relative of parent header container instead of browser*/
   right: 0%;
-  height: 40%;
+  height: 30%;
   width: 50%;
   background: rgba(52, 21, 21, .2);
 }
 #about{ /*nav bar components relative of parent nav bar container*/
   position: absolute;
   left: 30%;
-
+  top: 20%;
 }
 #portfolio{
   position: absolute;
-  left: 50%;
-  top: 30%;
+  left: 45%;
+  top: 45%;
 }
 #personal{
   position: absolute;
   right: 10%;
-  top: 50%
+  top: 70%;
 }
 
+/*medium breakpoint for tablet*/
+@media (min-width: 576px) and (max-width: 767px){
+  body{
+    background-color: aqua; /*for debugging purposes*/
+  }
+  #nameText{
+    top: 30%;
+  }
+  #designer{
+    top: 70%;
+    font-size: 2.5vw;
+    letter-spacing: 2px;
+    line-height: 3vh;
+  }
+}
+
+
+
+
+/*formatting for desktop*/
+@media (min-width: 768px) { 
+  .header{
+    background-position: 100% 10%; /*horizontal, vertical values*/
+    overflow-y: hidden; /* Hide scrollbars */
+  }
+  #nameText{
+    font-size: 4vw;
+    letter-spacing: 3px;
+  }
+  #designer{
+    font-size: 2vw;
+    letter-spacing: 1px;
+    line-height: 8vh;
+  }
+  .navBar{
+    font-size: 2vw;
+  }
+  #about{
+    left: 30%;
+    top: 25%;
+  }
+  #portfolio{
+    left: 50%;
+    top: 45%;
+  }
+  #personal{
+    right: 10%;
+    top: 55%;
+  }
+
+#TODO: semantic div tags
+}
