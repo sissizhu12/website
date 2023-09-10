@@ -1,14 +1,15 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> sissizhu.com </title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-
     <header>
         <!--contains the backdrop planet image, links to other pages in nav bar--> 
         <div id = "nameIntro">
@@ -18,12 +19,13 @@
         </div>
 
         <nav>
+            <!--TODO: handle visual aspect of visited links + hover animation->
             <!--semantically, nav bar is a list of links-->
             <ul id = "about" style = "text-align: left;"> about </ul>
             <ul></ul><ul></ul><ul></ul>
-            <ul id = "portfolio"> portfolio </ul>
+            <ul id = "portfolio"> <a href="/website/html/portfolio.html">portfolio</a></ul>
             <ul></ul><ul></ul><ul></ul>
-            <ul id = "personal"> personal </ul>
+            <ul id = "personal"><a href="/website/html/personal.html">personal</a></ul>
         </nav>
         <img id = "scrollDown" src ="media/scroll-icon.svg" alt = "scroll down! icon">
     </header>
@@ -31,35 +33,35 @@
     <!--about section, cta at bottom of page--> 
     <section id = "aboutSection">
         <h3>about</h2>
+        <div id = "top_rect"></div>
         <img src = "media/profile-pic.jpg" id = "pfp" alt = "a girl standing outside with a grey zip up jacket" width = 100%>
-            <p>
-            lover of the asymmetric and ethereal. spends too many hours thinking about the accessibility of everyday digitals and objects.<br><br>
-            majoring in psychology and cognitive science at the university of toronto. 
-            minoring in the visual arts.
-            </p>
+        <div id = "bot_rect"></div>
+        <p>
+        lover of the asymmetric and ethereal. spends too many hours thinking about the accessibility of everyday digitals and objects.<br><br>
+        majoring in psychology and cognitive science at the university of toronto. 
+        minoring in the visual arts.
+        </p>
         </div>
 
-        <div id = "right_rect"></div>
+        <!--TODO: make "my work" a link to portfolio page--> 
+        <div id = "left_rect"></div>
         <div id = "cta">
-            <p>simple. whimsical. creative. <br>looking for a fresh take on your digital space or brand?<br><br>
+            <p style= "font-weight:600">simple. whimsical. creative. </p>
+            <p>looking for a fresh take <br>on your digital space or brand?<br><br>
             check out my work and reach out to me at <a href="mailto:sissizhu12@gmail.com" style="text-decoration: underline; color:white;">sissizhu12@gmail.com.</a>
             </p>
         </div>
-        <div id = "left_rect"></div>
         <div id = "small_rect"></div>
+        <div id = "right_rect"></div>
 
     </section>
 
-    <!-- # TODO get icons for footer, revise layout for about section -->
-    <!--contains contact icon links + email--> 
     <footer>
-        <!--insert content here-->
-        <h6 style=" text-align: center; font-weight: 400;">website design and coding by yours truly✨</h6>
+        <!-- # TODO get icons for footer, revise layout for about section -->
+        <!--contains linkedin link + email--> 
+        <h6 style=" text-align: center; font-weight: 400; padding: 5%;">website design and coding by yours truly✨</h6>
     </footer>
 
-    <!-- <h1>wow very cool website</h1>
-    <p>very cool very cool very very very cool</p>
-    <img src="https://i.imgflip.com/34qahr.jpg" alt="doge" style="width:200px;"> -->
 </body>
 
 </html> 

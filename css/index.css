@@ -1,20 +1,22 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-body{
-    background-color: rgb(205, 148, 252);
-    font-family:"Baskerville,Baskerville Old Face,Hoefler Text,Garamond,Times New Roman,serif";
-  }
+/*this is a document of css styling for the homepage or index.html.*/
 header{
   position: relative; 
   width: 100%;
-  height: 100vh;
-  background-image: url("media/index_backdrop.png");
+  height: 100vh; /*fallback state in case browser doesn't support dvh*/
+  /*smallest viewport height, resizes to collapsed viewbar*/
+  height: 100svh; 
+  background-image: url("/website/media/index_backdrop.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; /*horizontally and vertically centered */
   color: aliceblue; /*font colour within header*/
+}
+#nameIntro{
+  position: absolute;
+  top: 50%; /*relative of parent header container instead of browser*/
+  height: 20%;
+  width: 80%;
+  background: rgba(52, 21, 21, .4); /*fourth value is alpha or opacity*/
 }
 #nameText{
   position: absolute;
@@ -22,6 +24,7 @@ header{
   font-size: 10vw;
   letter-spacing: 4px;
   font-weight: 500;
+  padding-left: 10%
 }
 #designer{
   position: absolute;
@@ -30,13 +33,7 @@ header{
   font-size: calc(2.5vw+.5rem);
   letter-spacing: 1.5px;
   line-height: 4vh;
-}
-#nameIntro{
-  position: absolute;
-  top: 50%; /*relative of parent header container instead of browser*/
-  height: 20%;
-  width: 80%;
-  background: rgba(52, 21, 21, .4) /*fourth value is alpha or opacity*/
+  padding-left: 10%
 }
 nav{
   position: absolute;
@@ -52,18 +49,6 @@ nav{
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr)
 }
-
-h3{
-  text-align: center;
-  letter-spacing: 6px; 
-  font-size: 8vw;
-  font-weight: 500;
-  padding-top: 5%;
-  padding-left: 10%;
-  padding-right: 10%;
-  /*no padding bottom bc image below has padding also*/
-}
-
 #scrollDown{
   opacity: .4;
   padding-top: 90vh;
@@ -72,46 +57,48 @@ h3{
   margin-right: auto;
   width: 15%;
 }
-
-#pfp{
-  width: 80%;
-  padding: 5% 10% 5% 10%;
+#aboutSection{
+  padding: 0% 10% 0% 10%; /*left and right padding*/
 }
-
-p{
-  font-size: .8rem;
-  text-align: justify;
-  padding: 0% 10% 0% 10%;
-  line-height: .8rem;
-}
-
-#cta{
+#cta { 
   background-color: rgba(7, 7, 7, 0.3);
-  width: 80%;
-  margin: 5% 10%;
+  width: 100%;
   padding: 10% 0% 10% 0%;
+}
+#cta p{ /*targets paragraph children inside cta class*/
+  font-size: .9rem;
   color:white;
+  margin: 5% 10%;
 }
-
-#right_rect{
-  background-color:rgb(125, 3, 246, 0.3);
-  width: 80%;
-  height: 5%;
-  margin: 5% 0% -10% 20%;
-}
-
-#left_rect{
-  background-color: rgba(22, 3, 195, 0.3);
-  width: 40%;
-  height: 5%;
-  margin: -10% 0% 5% 0%;
-}
-
-#small_rect{
-  background-color:  rgba(215, 3, 162, 0.3);
+#top_rect{
+  background-color:  rgba(183, 25, 143, 0.3);
   width: 20%;
+  height: 5%;
+  margin: 5% 0% -10% -5%;
+}
+#bot_rect{
+  background-color: rgba(62, 43, 232, 0.3);
+  width: 30%;
+  height: 5%;
+  margin: -10% 0% 5% 75%;
+}
+#left_rect{
+  background-color:rgba(119, 32, 206, 0.3);
+  width: 30%;
+  height: 5%;
+  margin: 5% 0% -10% -5%;
+}
+#right_rect{
+  background-color:  rgba(183, 25, 143, 0.3);
+  width: 30%;
   height: 8%;
-  margin: -20% 0% 10% 75%;
+  margin: -35% 0% 10% 75%;
+}
+#small_rect{
+  background-color: rgba(62, 43, 232, 0.3);
+  width: 15%;
+  height: 5%;
+  margin: -10% 0% 5% 70%;
 }
 
 /*medium breakpoint for tablets and some iPads*/

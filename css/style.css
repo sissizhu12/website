@@ -1,0 +1,26 @@
+/*this a document of core css styling for all the webpages.*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(205, 148, 252);
+    font-family:"Baskerville,Baskerville Old Face,Hoefler Text,Garamond,Times New Roman,serif";
+}
+h3{
+    text-align: center;
+    letter-spacing: 6px; 
+    font-size: 8vw;
+    font-weight: 500;
+    padding: 5% 10% 0% 10%
+    /*no padding bottom bc image below has padding also*/
+}
+p{
+    font-size: .8rem;
+    text-align: justify; /*makes each line same width*/
+    line-height: .8rem;
+}
+a{
+    color:white;
+    text-decoration: none;
+}

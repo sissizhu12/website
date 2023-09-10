@@ -1,0 +1,9 @@
+/*this is a document of css styling for the portfolio page.*/
+#wrapper{
+    background-color:rgb(73, 19, 104);
+    width: 100%;
+    padding: 10%;
+}
+iframe{
+    width: 80%;
+}
