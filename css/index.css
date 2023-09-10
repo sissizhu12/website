@@ -5,7 +5,7 @@ header{
   height: 100vh; /*fallback state in case browser doesn't support dvh*/
   /*smallest viewport height, resizes to collapsed viewbar*/
   height: 100svh; 
-  background-image: url("/media/index_backdrop.png");
+  background-image: url("../media/index_backdrop.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; /*horizontally and vertically centered */
