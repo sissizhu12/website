@@ -4,12 +4,15 @@
     padding: 0;
 }
 /*TODO: use JS to slow down scroll time*/
-html{
-    scroll-behavior: smooth;
-}
 body{
     background-color: rgb(205, 148, 252);
     font-family:"Baskerville,Garamond,Times New Roman,serif";
+}
+h2{
+    text-align: left;
+    font-size: 8vw;
+    font-weight: 500;
+    padding: 5% 10% 0% 10%
 }
 h3{
     text-align: center;
@@ -24,8 +27,51 @@ p{
     text-align: justify; /*makes each line same width*/
     line-height: .8rem;
 }
-a{
+html{
+    scroll-behavior: smooth;
+}
+header{
+    position: relative; 
+    width: 100%;
+    height: 100vh; /*fallback state in case browser doesn't support svh*/
+    height: 100svh; /*smallest viewport height, resizes to collapsed viewbar*/
+    background-image: url("../media/index_backdrop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; /*horizontally and vertically centered */
+    color: aliceblue; /*font colour within header*/
+  }
+.title {
+    height: 20vh;
+    background-position: center; /*horizontally and vertically centered */
+}
+.title h3{
+    font-size: 10vw;
+    letter-spacing: 4px;
+    font-weight: 500;
+    text-align:center;
+    padding: 15% 0px; /*TODO check this for responsive design*/
+    color: black;
+}
+.small_header { /*used across non-home pages*/
+    height: 15vh;
+    padding: 10% 10% 0% 10%;
+    text-align: center;
     color:white;
+}
+.small_nav{
+    font-size: 6vw;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+/* TODO: vertical dividers are not centered bc diff size ul*/
+.small_nav #nav2, .small_nav #nav3{
+/* .small_nav ul{ */
+    border-left: 1px solid #000000
+}
+a{
+    color:rgb(0, 0, 0);
     text-decoration: none;
 }
 a:hover{
