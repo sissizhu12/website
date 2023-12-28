@@ -42,15 +42,16 @@ header{
     color: aliceblue; /*font colour within header*/
   }
 .title {
-    height: 20vh;
-    background-position: center; /*horizontally and vertically centered */
+    height: 13vh;
+    background-position: 60% 30%;
+    background-size: 200%
 }
 .title h3{
     font-size: 10vw;
     letter-spacing: 4px;
     font-weight: 500;
     text-align:center;
-    padding: 15% 0px; /*TODO check this for responsive design*/
+    padding: 7% 0px; /*TODO check this for responsive design*/
     color: black;
 }
 .small_header { /*used across non-home pages*/
@@ -77,6 +78,7 @@ a{
 a:hover{
     color:#e9c2fb;
 }
-a:visited{
+/* TODO: make visited links colour diff only for mobile */
+/* a:visited{
     color:rgb(119, 32, 206)
-}
+} */
