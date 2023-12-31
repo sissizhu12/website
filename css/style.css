@@ -8,12 +8,14 @@ body{
     background-color: rgb(205, 148, 252);
     font-family:"Baskerville,Garamond,Times New Roman,serif";
 }
+.text_content{
+    padding: 5% 10% 0% 10%
+}
 h2{
     text-align: left;
     font-size: 8vw;
     font-weight: 500;
-    padding: 5% 10% 0% 10%
-}
+} 
 h3{
     text-align: center;
     letter-spacing: 6px; 
@@ -41,6 +43,23 @@ header{
     background-position: center center; /*horizontally and vertically centered */
     color: aliceblue; /*font colour within header*/
   }
+footer{
+    height:15vh;
+    padding:5%;
+}
+footer h6{
+    text-align: center;
+    font-weight: 400;
+}
+footer img{
+    width: 40px;
+    display: inline-block;
+    vertical-align: top;
+}
+footer .icons{
+    margin-left: 35%;
+    margin-top: 5%
+}
 .title {
     height: 13vh;
     background-position: 60% 30%;
