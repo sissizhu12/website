@@ -9,7 +9,7 @@ body{
     font-family:"Baskerville,Garamond,Times New Roman,serif";
 }
 .text_content{
-    padding: 5% 10% 0% 10%
+    padding: 5% 10% 5% 10%
 }
 h2{
     text-align: left;
@@ -79,16 +79,21 @@ footer .icons{
     text-align: center;
     color:white;
 }
+.small_header hr{
+    background-color: black;
+    color:black;
+    border-width: 0
+}
 .small_nav{
     font-size: 6vw;
     box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    /* don't use grid-template-columns here bc ul are different widths */
+    justify-content: space-evenly;
 }
-/* TODO: vertical dividers are not centered bc diff size ul*/
-.small_nav #nav2, .small_nav #nav3{
-/* .small_nav ul{ */
-    border-left: 1px solid #000000
+.small_nav ul{
+    height: 100%; 
+    display: inline;
 }
 a{
     color:rgb(0, 0, 0);
