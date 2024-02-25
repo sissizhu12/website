@@ -9,7 +9,7 @@ body{
     font-family:"Baskerville,Garamond,Times New Roman,serif";
 }
 .text_content{
-    padding: 5% 10% 5% 10%
+    padding: 0% 10% 0% 10%;
 }
 h2{
     text-align: left;
@@ -44,8 +44,7 @@ header{
     color: aliceblue; /*font colour within header*/
   }
 footer{
-    height:15vh;
-    padding:5%;
+    padding: 5% 10% 0% 10%;
 }
 footer h6{
     text-align: center;
@@ -57,15 +56,20 @@ footer img{
     vertical-align: top;
 }
 footer .icons{
-    margin-left: 35%;
-    margin-top: 5%
+    margin-top: 5%;
+    width: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-.title {
-    height: 13vh;
-    background-position: 60% 30%;
-    background-size: 200%
+.banner { /*banner is a child element of header*/
+    height: 10vh;
+    background-position: 25% 50%;
+    background-image: url("../media/small_header_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.title h3{
+.banner h3{
     font-size: 10vw;
     letter-spacing: 4px;
     font-weight: 500;
@@ -73,7 +77,7 @@ footer .icons{
     padding: 7% 0px; /*TODO check this for responsive design*/
     color: black;
 }
-.small_header { /*used across non-home pages*/
+.small_header { /*container for smalll_nav*/
     height: 15vh;
     padding: 10% 10% 0% 10%;
     text-align: center;
@@ -81,10 +85,10 @@ footer .icons{
 }
 .small_header hr{
     background-color: black;
-    color:black;
-    border-width: 0
+    width: 2px;
+    border-width: 0;
 }
-.small_nav{
+.small_nav{ /* dividers between links*/
     font-size: 6vw;
     box-sizing: border-box;
     display: flex;
@@ -95,14 +99,136 @@ footer .icons{
     height: 100%; 
     display: inline;
 }
+#left_rect, #right_rect{ /*used only in desktop version*/
+    display: none;
+    color: white;
+}
 a{
     color:rgb(0, 0, 0);
-    text-decoration: none;
+    text-decoration:none;
 }
 a:hover{
-    color:#e9c2fb;
+    color:#e9c2fb; /*fyi this doesn't work in firefox*/
 }
+
 /* TODO: make visited links colour diff only for mobile */
 /* a:visited{
     color:rgb(119, 32, 206)
 } */
+
+/*formatting for desktop*/
+@media (min-width: 1025px){
+    footer{
+        height: 20vh;
+        padding: 5%;
+        font-size: 1.4rem;
+      }
+      footer .icons{
+        width: 130px;
+        margin-top: 2%;
+      }
+    footer img{
+        width: 60px;
+    }
+    .banner {
+        margin-top: 0%;
+        height: 50vh;
+        background-position: 75% 35%;
+        background-size: 150%;
+        z-index: 0;
+    }
+    .banner h3{
+        font-size: 30vh;
+        letter-spacing: 4px;
+        font-weight: 500;
+        text-align:center;
+        padding: 7% 0px; /*TODO check this for responsive design*/
+        color: black;
+    }
+    .small_header { /*container for small_nav*/
+        height: 25vh;
+        padding: 0% 10% 0% 10%;
+        text-align: center;
+        display: none;
+    }
+    .small_header hr{
+        width: 8px;
+        background-color: black;
+        border-width: 4px;
+    }
+    .small_nav{ /* dividers between links*/
+        font-size: 2vw;
+        box-sizing: border-box;
+        display: flex;
+        /* don't use grid-template-columns here bc ul are different widths */
+        justify-content: space-evenly;
+    }
+    .small_nav ul{
+        height: 100%; 
+        display: inline;
+    }
+    #left_rect{
+        position: absolute;
+        top: 5%; /*relative of parent header container instead of browser*/
+        height: 15%;
+        width: 50%;
+        background: rgba(52, 21, 21, .4); /*fourth value is alpha or opacity*/
+        z-index: 1;
+        display: block;
+        letter-spacing: 1.5px;
+        padding: 5% 0% 0% 5%;
+    }
+    #right_rect{
+        height: 25%;
+        width: 50%;
+        position: absolute;
+        top: 20%;
+        right: 0;
+        z-index: 1;
+        background: rgba(52, 21, 21, .4); /*fourth value is alpha or opacity*/
+        display: block;
+    }
+    #name{
+        font-size: 4vw;
+        letter-spacing: 10px;
+        font-weight: 500;
+    }
+    #role{
+        font-size: 2vw;
+        margin-top: 5%;
+    }
+    nav a{
+        text-align: center;
+        color: white;
+    }
+    nav{
+        font-size: 2.2vw;
+        height: 30%;
+        width: 80%;
+        display: grid;
+        padding: 2% 5% 5% 15%;
+        box-sizing: border-box; /*keeps nav bar width the same*/
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+      }
+      h3{
+        font-size: 4vw;
+        letter-spacing: 10px; 
+        font-weight: 500;
+        padding: 0% 10% 5% 10%
+      }
+      h2{
+        font-size: 2vw !important;
+        font-weight: 300;
+    } 
+    iframe{
+        width:100%;
+        height:65%;
+    }
+    #mobile_intro{
+        display: none;
+    }
+    #desktop_intro{
+        display: visible;
+    }
+}

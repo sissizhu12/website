@@ -3,10 +3,7 @@ a{
   color:white;
   text-decoration: none;
 }
-a:hover{
-  color:#e9c2fb;
-}
-a:visited{
+a:visited:not(nav a){ /*all links except nav bar will change colour*/
   color:rgb(119, 32, 206)
 }
 #nameIntro{
@@ -31,7 +28,7 @@ a:visited{
   font-size: calc(2.5vw+.5rem);
   letter-spacing: 1.5px;
   line-height: 4vh;
-  padding-left: 10%
+  padding-left: 10%;
 }
 nav{
   position: absolute;
@@ -46,6 +43,9 @@ nav{
   box-sizing: border-box; /*keeps nav bar width the same*/
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr)
+}
+nav ul{
+  text-align: center;
 }
 #scrollDown{
   opacity: .4;
@@ -69,6 +69,7 @@ nav{
   font-size: .9rem;
   color:white;
   margin: 5% 10%;
+  width:80%
 }
 #top_rect{
   background-color:  rgba(183, 25, 143, 0.3);
@@ -98,7 +99,7 @@ nav{
   background-color: rgba(62, 43, 232, 0.3);
   width: 15%;
   height: 5%;
-  margin: -10% 0% 5% 70%;
+  margin: -10% 0% 5% 7%;
 }
 
 /*medium breakpoint for tablets and some iPads*/
@@ -146,33 +147,101 @@ nav{
     top: 60%;
     font-size: 2vw;
     letter-spacing: 1px;
-    line-height: 8vh;
+    /* line-height: 8vh; */
   }
   #nameIntro{
-    top: 55%;
-    height: 30%;
-    width: 60%
+    top: 45%;
+    height: 35%;
+    width: 60%;
   }
   nav{
-    font-size: 2vw;
-    height: 25%;
+    font-size: 2.2vw;
+    height: 30%;
     width: 55%;
-  }
-  #about{
-    left: 35%;
-    top: 25%;
-  }
-  #portfolio{
-    left: 55%;
-    top: 45%;
-  }
-  #personal{
-    left: 75%;
-    top: 55%;
+    top: 60%;
+    display: grid;
+    padding: 2% 5% 5% 15%;
+    box-sizing: border-box; /*keeps nav bar width the same*/
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
   #scrollDown{
     padding-top: 85vh;
     opacity: 0;
     width: 8%;
+  }
+  #about_anchor{
+    letter-spacing: 1vw;
+    font-size: 4vw;
+  }
+  .aboutSection{
+    padding: 5% 0% 5% 0%;
+    height: 20%;
+  }
+  #pfp{
+    width: 50%;
+    padding: 5% 0% 5% 0%;
+    float: right;
+  }
+  #about_text{
+    font-size: 1.4rem;
+    text-align: left;
+    line-height: normal;
+    float: left;
+    width: 30%;
+    padding: 2% 10% 0% 10%;
+  }
+  #cta{
+    margin-top: 35%;
+    padding: 0%;
+    width: 90%;
+    height: 40%;
+    position:absolute;
+    right:0;
+  }
+  #cta p{
+    font-size: 1.6rem;
+    margin-left: 5%;
+  }
+  .top_button{
+    margin-top: 27%;
+    font-size: 2rem;
+    /* display: none; */
+  }
+  #top_rect{
+    background-color:  rgba(183, 25, 143, 0.3);
+    width: 10%;
+    height: 8%;
+    margin: 5% 0% -10% -8%;
+  }
+  #bot_rect{
+    background-color: rgba(62, 43, 232, 0.3);
+    width: 30%;
+    height: 5%;
+    margin: 0% 0% 5% 75%;
+  }
+  #rect1{
+    background-color:rgba(119, 32, 206, 0.3);
+    width: 15%;
+    height: 6%;
+    margin: -6% 0% -5% -5%;
+  }
+  #rect2{
+    background-color:  rgba(62, 43, 232, 0.3);;
+    width: 30%;
+    height: 10%;
+    margin: 40% 0% 0% -5%;
+  }
+  #small_rect{
+    background-color: rgba(183, 25, 143, 0.3);
+    width: 20%;
+    height: 8%;
+    margin: -10% 0% 0% 70%;
+  }
+  #tiny_rect{
+    background-color: rgba(183, 25, 143, 0.3);
+    width: 15%;
+    height: 10%;
+    margin: -15% 0% 0% 90%;
   }
 }

@@ -4,50 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> sissizhu.com </title>
+    <title> Sissi Zhu </title>
+    <link rel="icon" type="image/x-icon" href="/media/favicon.png">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/portfolio.css">
 </head>
 
 <body>
+    <!-- TODO:add anchors here -->
     <div class = "small_header"><h3>sissi zhu</h3>
         <div class = small_nav>
             <ul><a href="../index.html">about</a></ul>
-            <!-- TODO:add anchor -->
             <hr width="1" height="100%"/>
-            <ul><a href="/html/portfolio.html">portfolio</a></ul>
-            <!-- TODO:add anchor -->
+            <ul><a href="../html/portfolio.html">portfolio</a></ul>
             <hr width="1" height="100%"/>
-            <ul><a href="/html/personal.html">personal</a></ul>
+            <ul><a href="../html/personal.html">personal</a></ul>
         </div>
     </div>
 
-    <header class= "title"><h3>portfolio</h3></header> <!-- page title -->
+    <div id = "left_rect">
+        <p id ="name">sissi zhu<p>
+        <p id = "role">UI/UX & PRODUCT DESIGNER</p>
+    </div>
+
+    <div id = "right_rect">
+        <nav>
+            <!-- TODO check if there's a better way to do this -->
+            <!--semantically, nav bar is a list of links-->
+            <ul class = "about"><a href="/index.html">about</a></ul>
+            <ul></ul><ul></ul><ul></ul>
+            <ul class = "portfolio"> <a href="/html/portfolio.html">portfolio</a></ul>
+            <ul></ul><ul></ul><ul></ul>
+            <ul class = "personal"><a href="/html/personal.html">personal</a></ul>
+        </nav>
+    </div>
+    <header class= "banner"></header>
+
+    <h3 style="color:white; padding:5%"> portfolio</h3>
     <div class = "text_content" style="color:white; letter-spacing: 2px">
-        <h2> although art and science are often regarded as opposite spheres of life,
-        I believe that the two worlds of thought are not so independent or different.
+        <h2 style="font-size: 4vw"> art and science are often seen as opposite subjects, but
+        I believe that the two worlds are actually collaborative in design.
         </h2>
+        <br>
+    </div>
+
+    <div class = "text_content" id ="desktop_intro"> <!--only shown on desktop-->
+        <h2 style= "font-weight: 400 !important;">my work</h2>
+        <p style= "font-size: 2vw; line-height: normal;">in user experience design is informed by my studies in psychology, cognitive (computer) science, and the visual arts.
+        each field helps me understand how humans interact with and perceive digital spaces and stimuli.
+        in learning about different health and cognitive conditions,
+        I’ve also become passionate about accessibility friendly digital interfaces and
+        better integrated of it into the human-computer interaction narrative.
+        </p>
     </div>
 
     <section id="wrapper">
-        <iframe id= "slides" src="https://docs.google.com/presentation/d/e/2PACX-1vSzNoanGLV63awX8ransmCTZZoK3rubruRW3oak5WreTqrOji_yZ__4IwAmzI7xRrdluCw3cKVQeZX7/embed?start=false&loop=false&delayms=3000" frameborder="0" width="300" height="300" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        <iframe id= "slides" src="https://docs.google.com/presentation/d/e/2PACX-1vSzNoanGLV63awX8ransmCTZZoK3rubruRW3oak5WreTqrOji_yZ__4IwAmzI7xRrdluCw3cKVQeZX7/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="25%" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
     </section>
     <!-- TODO: make this iframe centered -->
 
-    <div class = "text_content">
+    <div class = "text_content" id="mobile_intro"> <!--only shown on mobile-->
         <h2>my work</h2>
-        <p>in user experience design is informed by my studies in psychology, cognitive science, and the visual arts;
-        each component helps me further understand how humans interact with and perceive digital spaces and stimuli.
-        in learning about different disorders and illnesses,
+        <p>in user experience design is informed by my studies in psychology, cognitive (computer) science, and the visual arts.
+        each field helps me understand how humans interact with and perceive digital spaces and stimuli.
+        in learning about different health and cognitive conditions,
         I’ve also become passionate about accessibility friendly digital interfaces and
-        feel that accessibility should be better integrated into the human-computer interaction narrative.
-        </p>
-        
+        better integrated of it into the human-computer interaction narrative.
+        </p>  
     </div>
+
     <footer>
+        <a href="#"><h6 style="text-decoration: underline !important;">back to top</h6></a>
+        <br>
         <h6> website design and coding by yours truly✨
         <br>
-        Copyright © 2023 Sissi Zhu. All Rights Reserved.
+        Copyright © 2024 Sissi Zhu. All Rights Reserved.
         </h6>
         <div class = "icons">
             <a href="https://github.com/sissizhu12/website">
@@ -58,9 +89,7 @@
             </a>
         </div>
     </footer>
-    
 </body>
-
 </html>
 
 

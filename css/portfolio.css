@@ -1,8 +1,29 @@
 /*this is a document of css styling for the portfolio page.*/
 #wrapper{
-    background-color:rgb(73, 19, 104);
+    background-color: rgba(7, 7, 7, 0.3);;
     padding: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
-/* iframe{
-    width: 80%;
-} */
+#mobile_intro{
+    display: block;
+}
+#desktop_intro{
+    display: none;
+}
+/*formatting for desktop*/
+@media (min-width: 1025px){
+    iframe{
+        width:100%;
+        height:110%;
+    }
+    #mobile_intro{
+        display: none;
+    }
+    #desktop_intro{
+        display: block;
+    }
+    #wrapper{
+        margin-bottom: 0%
+    }
+}
