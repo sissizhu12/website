@@ -12,7 +12,7 @@
 
 <body>
     <!-- TODO:add anchors here -->
-    <div class = "small_header"><h3>sissi zhu</h3>
+    <div class = "small_header"><h3 style="padding-top:0%">sissi zhu</h3>
         <div class = small_nav>
             <ul><a href="../index.html">about</a></ul>
             <hr width="1" height="100%"/>
@@ -38,43 +38,47 @@
             <ul class = "personal"><a href="/html/personal.html">personal</a></ul>
         </nav>
     </div>
-    <header class= "banner"></header>
+    <header class= "banner">
+        <h3 style="padding:5%"> portfolio</h3>
+    </header>
 
-    <h3 style="color:white; padding:5%"> portfolio</h3>
+    <h3 class="desktop_title" style="padding:5%"> portfolio</h3>
     <div class = "text_content" style="color:white; letter-spacing: 2px">
-        <h2 style="font-size: 4vw"> art and science are often seen as opposite subjects, but
+        <h2> art and science are often seen as opposite subjects, but
         I believe that the two worlds are actually collaborative in design.
         </h2>
         <br>
     </div>
 
     <div class = "text_content" id ="desktop_intro"> <!--only shown on desktop-->
-        <h2 style= "font-weight: 400 !important;">my work</h2>
-        <p style= "font-size: 2vw; line-height: normal;">in user experience design is informed by my studies in psychology, cognitive (computer) science, and the visual arts.
-        each field helps me understand how humans interact with and perceive digital spaces and stimuli.
-        in learning about different health and cognitive conditions,
-        I’ve also become passionate about accessibility friendly digital interfaces and
-        better integrated of it into the human-computer interaction narrative.
-        </p>
+        <h2 id = "my_work">my work
+            <p>in user experience design is informed by my studies in psychology, cognitive (computer) science, and the visual arts.
+            each field helps me understand how humans interact with and perceive digital spaces and stimuli.
+            in learning about different health and cognitive conditions,
+            I’ve become incredibly passionate about accessibility friendly digital interfaces and
+            better integration of it into the human-computer interaction narrative.
+            </p>
+        </h2>
+        
     </div>
 
     <section id="wrapper">
         <iframe id= "slides" src="https://docs.google.com/presentation/d/e/2PACX-1vSzNoanGLV63awX8ransmCTZZoK3rubruRW3oak5WreTqrOji_yZ__4IwAmzI7xRrdluCw3cKVQeZX7/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="25%" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
     </section>
-    <!-- TODO: make this iframe centered -->
 
     <div class = "text_content" id="mobile_intro"> <!--only shown on mobile-->
         <h2>my work</h2>
         <p>in user experience design is informed by my studies in psychology, cognitive (computer) science, and the visual arts.
         each field helps me understand how humans interact with and perceive digital spaces and stimuli.
         in learning about different health and cognitive conditions,
-        I’ve also become passionate about accessibility friendly digital interfaces and
-        better integrated of it into the human-computer interaction narrative.
+        I’ve become incredibly passionate about accessibility friendly digital interfaces and
+        better integration of it into the human-computer interaction narrative.
         </p>  
     </div>
 
+    <!--TODO: debug why no underlined "back to top" for firefox only-->
     <footer>
-        <a href="#"><h6 style="text-decoration: underline !important;">back to top</h6></a>
+        <a id ="top_button" href="#"><h6>back to top</h6></a>
         <br>
         <h6> website design and coding by yours truly✨
         <br>

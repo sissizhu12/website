@@ -11,35 +11,58 @@
 </head>
 
 <body>
-    <div class = "small_header"><h3>sissi zhu</h3>
+    <!-- TODO:add anchors here -->
+    <div class = "small_header"><h3 style="padding-top:0%">sissi zhu</h3>
         <div class = small_nav>
             <ul><a href="../index.html">about</a></ul>
-            <!-- TODO:add anchor -->
             <hr width="1" height="100%"/>
-            <ul><a href="/html/portfolio.html">portfolio</a></ul>
-            <!-- TODO:add anchor -->
+            <ul><a href="../html/portfolio.html">portfolio</a></ul>
             <hr width="1" height="100%"/>
-            <ul><a href="/html/personal.html">personal</a></ul>
+            <ul><a href="../html/personal.html">personal</a></ul>
         </div>
     </div>
 
-    <header class= "banner"><h3>personal</h3></header> <!-- page title -->
-    <div class = "text_content">
-        <h2 style="letter-spacing: 2px">outside of my work,</h2>
-        <p>I enjoy exploring other forms of art and design, especially
-            <a href="https://vimeo.com/sissizhu">filmmaking</a> and <a href="https://www.youtube.com/@redlight2222">music</a> as a sound designer and vocalist.
-            still learning the ins and outs of both hobbies but my classical training in violin, love of digital media, and curiousity overall help!
-            <br>
-            <br>
-            check out my most recent film and vocal demo below! don't be afraid to reach out if you want to work together💕
-         </p>
+    <div id = "left_rect">
+        <p id ="name">sissi zhu<p>
+        <p id = "role">UI/UX & PRODUCT DESIGNER</p>
+    </div>
+
+    <div id = "right_rect">
+        <nav>
+            <!-- TODO check if there's a better way to do this -->
+            <!--semantically, nav bar is a list of links-->
+            <ul class = "about"><a href="/index.html">about</a></ul>
+            <ul></ul><ul></ul><ul></ul>
+            <ul class = "portfolio"> <a href="/html/portfolio.html">portfolio</a></ul>
+            <ul></ul><ul></ul><ul></ul>
+            <ul class = "personal"><a href="/html/personal.html">personal</a></ul>
+        </nav>
+    </div>
+    <header class= "banner">
+        <h3 style="padding:5%">personal</h3>
+    </header>
+    <h3 class="desktop_title" style="padding:5%">personal</h3>
+
+    <div class = "text_content" style="width:80%">
+        <h2 id = "my_work">outside of my work,
+            <p id = "blurb">I enjoy exploring other forms of art and design, especially
+                <a href="https://vimeo.com/sissizhu">filmmaking</a> and <a href="https://www.youtube.com/@redlight2222">music</a> as a sound designer and vocalist.
+                I'm still learning the ins and outs of both, but my classical training in violin, love of digital media, and curiousity overall motivate me to keep going!
+                <br>
+                <br>
+                check out my most recent film and vocal demo below! don't be afraid to reach out if you want to work together💕
+             </p>
+        </h2>
+        
     
     </div>
-    <!-- TODO: make video link visually different, add in gallery photos -->
-    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/902566401?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:10%;width:80%;height:100%;" title="Labour of Love"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-    <div class = "iframe_wrapper">
-        <iframe title="youtube video with red glasses thumbnail" padding="10%" width="80%" height="200" src="https://www.youtube.com/embed/RcUMgGXZWyc?si=bR7xGyfQ5ngVYkoa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class = "video_embeds">
+        <div id ="film" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/902566401?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:10%;width:80%;height:100%;" title="Labour of Love"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        <div class = "iframe_wrapper">
+            <iframe title="youtube video with red glasses thumbnail" padding="10%" width="80%" height="200" src="https://www.youtube.com/embed/RcUMgGXZWyc?si=bR7xGyfQ5ngVYkoa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </div>
+
     <div class="divider">
         <div class="lines"></div>
         <div class= "shape"></div>
@@ -51,34 +74,55 @@
         here are some of my favourite shots!
         </p>
     </div>
+    <br>
+    <br>
 
-    <div class="gallery-wrapper">
-        <div><img src="/media/photoshoots/1.jpg"></div>
-        <div><img src="/media/photoshoots/2.jpg"></div>
+    <div id= "mobile_gallery" class="gallery-wrapper">
+        <div class = "caption"><p>photographer: @tayaridaylam on IG</p></div>
         <div><img src="/media/photoshoots/3.jpg"></div>
+        <div><img src="/media/photoshoots/1.jpg"></div>
+        <div class = "caption"><p>photographer: @bright.<u> </u>.delights on IG</p></div>
         <div><img src="/media/photoshoots/4.jpg"></div>
-        <!-- <div><img src="/media/photoshoots/5.jpg"></div>
-        <div><img src="/media/photoshoots/6.jpg"></div>
         <div><img src="/media/photoshoots/7.jpg"></div>
-        <div><img src="/media/photoshoots/8.jpg"></div>
-        <div><img src="/media/photoshoots/9.jpg"></div>
+        <div><img src="/media/photoshoots/5.jpg"></div>
+        <div class = "caption"><p>photographer: @jacobjelllyy on IG</p></div>
         <div><img src="/media/photoshoots/10.jpg"></div>
-        <div><img src="/media/photoshoots/11.jpg"></div>
-
-        <div><img src="/media/photoshoots/12.jpeg"></div>
-        <div><img src="/media/photoshoots/13.jpeg"></div>
-        <div><img src="/media/photoshoots/14.jpeg"></div>
         <div><img src="/media/photoshoots/15.jpeg"></div>
-        <div><img src="/media/photoshoots/16.jpeg"></div>
-        <div><img src="/media/photoshoots/17.jpeg"></div>
         <div><img src="/media/photoshoots/18.jpeg"></div>
-        <div><img src="/media/photoshoots/19.jpeg"></div>
         <div><img src="/media/photoshoots/20.JPEG"></div>
         <div><img src="/media/photoshoots/21.jpg"></div>
-        <div><img src="/media/photoshoots/22.jpg"></div> -->
+    </div>
+
+    <div id="desktop_gallery" class="gallery-wrapper">
+        <div class = "caption"><p>photographer: @tayaridaylam on IG</p></div>
+        <div class = "flex_container">
+            <div><img src="/media/photoshoots/3.jpg"></div>
+            <div><img src="/media/photoshoots/1.jpg"></div>
+        </div>
+
+        <div class = "caption"><p>photographer: @bright.<u> </u>.delights on IG</p></div>
+        <div class = "flex_container">
+            <div><img src="/media/photoshoots/4.jpg"></div>
+            <div><img src="/media/photoshoots/7.jpg"></div>
+            <div><img src="/media/photoshoots/5.jpg"></div>
+        </div>
+        
+        <div class = "caption"><p>photographer: @jacobjelllyy on IG</p></div>
+        <div class = "flex_container">
+            <div><img src="/media/photoshoots/10.jpg"></div>
+            <div><img src="/media/photoshoots/15.jpeg"></div>
+            <div><img src="/media/photoshoots/18.jpeg"></div>
+        </div>
+
+        <div class = "flex_container">
+            <div><img src="/media/photoshoots/20.JPEG"></div>
+            <div><img src="/media/photoshoots/21.jpg"></div>
+        </div>
     </div>
 
     <footer>
+        <a id ="top_button" href="#"><h6>back to top</h6></a>
+        <br>
         <h6> website design and coding by yours truly✨
         <br>
         Copyright © 2023 Sissi Zhu. All Rights Reserved.

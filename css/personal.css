@@ -1,4 +1,7 @@
 /*this is a document of css styling for the personal page.*/
+.my_work{
+    letter-spacing: 2px;
+}
 iframe{
     display: block;
     width: 80%;
@@ -6,11 +9,10 @@ iframe{
     padding-bottom: 5%;
     /*TODO: check padding for responsive video ratio*/
 }
-
 .divider{
-    height: 6vw
+    height: 6vw;
+    padding: 5%
 }
-
 /*pseudoelements are inline children of parent .lines*/
 .lines::before, .lines::after{
     content: "";
@@ -19,48 +21,104 @@ iframe{
     height: 2px;
     width: 43%;
     background: #ffffff;
-    margin-top: 3vw
+    margin-top: 5%;
 }
-
 .lines::after{
     right:0;
 }
-
 .lines::before{
     left:0;
 }
-
 .shape{
-    height:6vw;
-    width:6vw;
+    height:3vw;
+    width:3vw;
     border: 2px solid #fff;
-    /* left:0;
-    right:0;
-    top:0;
-    bottom: 0; */
     margin: auto;
     transform: rotate(45deg);
+    margin-top: 3%;
 }
-
-.gallery-wrapper{
-    padding: 10%;
-    display: grid;
-    grid-template-columns: repeat(autofit, minmax(250px, 1fr));
-    grid-auto-rows: 200px;
-    grid-auto-flow: dense;
+img:not(footer img){
+    padding: 5% 5% 0% 5%;
+    width: 100%;
 }
-img{
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-    display: inline-block;
-    object-fit: contain;
-}
-
 .gallery-wrapper > div{ /*child selector for divs inside wrapper*/
      display:flex;
      justify-content: center;
      align-items: center
 }
+.gallery-wrapper p{
+    font-size: .6rem;
+}
+.caption p{
+    color:rgba(52, 21, 21, .4);
+}
+.flex_container{
+    display:none;
+}
+#mobile_gallery{
+    display: block;
+}
+#desktop_gallery{
+    display:none;
+}
 /* TODO: for media queries, change .shape height and width
 and also height of divider */
+@media (min-width: 1025px){
+    /*pseudoelements are inline children of parent .lines*/
+    #mobile_gallery{
+        display: none;
+    }
+    #desktop_gallery{
+        display:block;
+    }
+    .lines::before, .lines::after{
+        margin-top: 0%;
+    } 
+    .shape{
+        margin-top: -2%;
+    }
+    #film{
+        width: 100%
+    }
+    iframe{
+        height: 80%
+    }
+    .text_content p{
+        font-size: 1.4rem;
+    }
+    #my_work{
+        display: inline;
+    }
+    #my_work p{
+        display: inline;
+        margin-right: 100px;
+    }
+    /* #TODO debug how to use flexbox to get pictures to evenly sit in rows with same height */
+    img:not(footer img){
+        padding: 5%;
+        display: inline;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        /* vertical-align: middle;
+        display: inline-block;
+        object-fit: contain;*/
+    }
+    .caption p{
+        font-size: 1.4rem;
+    }
+    .flex_container{
+        padding: 5%;
+        display: flex;
+        justify-content: center;
+        /* object-fit: contain; */
+    }
+    .gallery-wrapper{
+        padding: 10%;
+        /* display: grid; */
+        /* grid-template-columns: repeat(autofit, minmax(250px, 1fr)); */
+        /* grid-auto-rows: 200px;
+        grid-auto-flow: dense;
+        background-color:red; */
+    }
+}

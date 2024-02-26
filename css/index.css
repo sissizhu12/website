@@ -3,9 +3,6 @@ a{
   color:white;
   text-decoration: none;
 }
-a:visited:not(nav a){ /*all links except nav bar will change colour*/
-  color:rgb(119, 32, 206)
-}
 #nameIntro{
   position: absolute;
   top: 50%; /*relative of parent header container instead of browser*/
@@ -58,18 +55,22 @@ nav ul{
   transform: translate(0px, 80svh);
 }
 #aboutSection{
-  padding: 0% 10% 0% 10%; /*left and right padding*/
+  padding: 5% 10% 0% 10%; /*left and right padding*/
+}
+#about_text{
+  padding: 5%;
 }
 #cta { 
   background-color: rgba(7, 7, 7, 0.3);
   width: 100%;
   padding: 10% 0% 10% 0%;
+  height: 20%;
 }
 #cta p{ /*targets paragraph children inside cta class*/
   font-size: .9rem;
   color:white;
-  margin: 5% 10%;
-  width:80%
+  margin: 8% 0% -5% 10%;
+  width:80%;
 }
 #top_rect{
   background-color:  rgba(183, 25, 143, 0.3);
@@ -184,29 +185,25 @@ nav ul{
     float: right;
   }
   #about_text{
-    font-size: 1.4rem;
+    font-size: 1.8vw;
     text-align: left;
     line-height: normal;
     float: left;
     width: 30%;
-    padding: 2% 10% 0% 10%;
+    padding: 5% 5% 0% 10%;
   }
   #cta{
     margin-top: 35%;
     padding: 0%;
     width: 90%;
-    height: 40%;
+    height: 45%;
     position:absolute;
     right:0;
   }
   #cta p{
-    font-size: 1.6rem;
+    font-size: 1.6vw;
     margin-left: 5%;
-  }
-  .top_button{
-    margin-top: 27%;
-    font-size: 2rem;
-    /* display: none; */
+    margin-top: 8%;
   }
   #top_rect{
     background-color:  rgba(183, 25, 143, 0.3);
@@ -228,9 +225,9 @@ nav ul{
   }
   #rect2{
     background-color:  rgba(62, 43, 232, 0.3);;
-    width: 30%;
+    width: 15%;
     height: 10%;
-    margin: 40% 0% 0% -5%;
+    margin: 42% 0% 0% -5%;
   }
   #small_rect{
     background-color: rgba(183, 25, 143, 0.3);
@@ -242,6 +239,9 @@ nav ul{
     background-color: rgba(183, 25, 143, 0.3);
     width: 15%;
     height: 10%;
-    margin: -15% 0% 0% 90%;
+    margin: -11% 0% 0% 90%;
+  }
+  footer{
+    margin-top: 20%; /*note this only applies to desktop home page*/
   }
 }
