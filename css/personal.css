@@ -90,7 +90,7 @@ img:not(footer img){
         height: 80%
     }
     .text_content p{
-        font-size: 1.4rem;
+        font-size: 1.6vw;
     }
     #my_work{
         display: inline;

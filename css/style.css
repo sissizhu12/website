@@ -66,7 +66,6 @@ footer .icons{
     margin-right: auto;
 }
 footer #top_button{
-    text-decoration: underline !important;
     text-align: center;
     color:rgb(119, 32, 206)
 }
@@ -121,7 +120,7 @@ footer #top_button{
     display: none;
     color: white;
 }
- nav a, .small_nav a{
+ nav a, .small_nav a, footer .icons a{
     text-decoration:none;
 }
 a:hover{
@@ -168,12 +167,15 @@ a:hover{
 
 /*formatting for desktop*/
 @media (min-width: 1025px){
+    footer #top_button h6{
+        font-size: 1.4vw;
+    }
     footer{
         height: 20vh;
         margin-bottom: 5% 
       }
     footer h6{
-        font-size: 1.6vw;
+        font-size: 1vw;
     }
     footer .icons{
         width: 130px;
@@ -184,7 +186,7 @@ a:hover{
     }
     .banner {
         margin-top: 0%;
-        height: 50vh;
+        height: 60vh;
         background-position: 75% 35%;
         background-size: 150%;
         z-index: 0;
@@ -238,7 +240,7 @@ a:hover{
         height: 25%;
         width: 50%;
         position: absolute;
-        top: 20%;
+        top: 30%;
         right: 0;
         z-index: 1;
         background: rgba(52, 21, 21, .4); /*fourth value is alpha or opacity*/
@@ -271,13 +273,13 @@ a:hover{
         grid-template-rows: repeat(3, 1fr);
       }
       h3{
-        font-size:3rem;
+        font-size: 3vw;
         letter-spacing: 10px; 
         font-weight: 500;
         padding: 0% 10% 5% 10%
       }
       h2{
-        font-size: 2rem;
+        font-size: 2.6vw;
         font-weight: 300;
     } 
     iframe{
