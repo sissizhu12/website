@@ -7,11 +7,10 @@ iframe{
     width: 80%;
     margin: auto;
     padding-bottom: 5%;
-    /*TODO: check padding for responsive video ratio*/
 }
 .divider{
     height: 6vw;
-    padding: 5%
+    padding: 5%;
 }
 /*pseudoelements are inline children of parent .lines*/
 .lines::before, .lines::after{
@@ -31,7 +30,7 @@ iframe{
 }
 .shape{
     height:3vw;
-    width:3vw;
+    width: 3vw;
     border: 2px solid #fff;
     margin: auto;
     transform: rotate(45deg);
@@ -61,8 +60,15 @@ img:not(footer img){
 #desktop_gallery{
     display:none;
 }
-/* TODO: for media queries, change .shape height and width
-and also height of divider */
+
+/*formatting for larger iPads*/
+@media (min-width: 768px) and (max-width: 1024px){
+    .gallery-wrapper p{
+        font-size: 1.2rem;
+    }
+}
+
+/*formatting for desktop*/
 @media (min-width: 1025px){
     /*pseudoelements are inline children of parent .lines*/
     #mobile_gallery{
@@ -103,7 +109,6 @@ and also height of divider */
     #row_5 img{
         height: 400px;
     }
-    /* #TODO debug how to use flexbox to get pictures to evenly sit in rows with same height */
     img:not(footer img){
         padding: 0% 5 0% 5%;
         display: flex;
