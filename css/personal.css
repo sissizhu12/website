@@ -38,7 +38,7 @@ iframe{
 }
 img:not(footer img){
     padding: 5%;
-    width: 100%;
+    width: 90%;
 }
 .gallery-wrapper > div{ /*child selector for divs inside wrapper, including captions*/
      display:flex;
@@ -112,7 +112,6 @@ img:not(footer img){
     img:not(footer img){
         padding: 0% 5 0% 5%;
         display: flex;
-        width: 90%;
         max-width: 100%;
         /* height: auto;
         vertical-align: middle;
