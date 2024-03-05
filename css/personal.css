@@ -37,7 +37,7 @@ iframe{
     margin-top: 3%;
 }
 img:not(footer img){
-    padding: 5%;
+    padding: 5% 10% 5% 10%;
     width: 90%;
 }
 .gallery-wrapper > div{ /*child selector for divs inside wrapper, including captions*/
