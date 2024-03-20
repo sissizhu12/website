@@ -5,6 +5,10 @@
     margin-top: 5%;
     margin-bottom: 5%;
 }
+#wrapper p{
+    margin: 5%;
+    text-align: center;
+}
 #mobile_intro{
     display: block;
 }
@@ -57,7 +61,13 @@
     margin-right: 10px;
    }
     #wrapper{
-        margin-bottom: 0%
+        margin-bottom: 0%;
+    }
+    #wrapper p{
+        margin: 0%;
+        margin-bottom: 5%;
+        text-align: center;
+        font-size: 2vw;
     }
     /*TODO: debug this, it doesn't do anything*/
     .top_button {
