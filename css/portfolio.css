@@ -1,13 +1,26 @@
 /*this is a document of css styling for the portfolio page.*/
 .project_container{
-    background-color: rgba(7, 7, 7, 0.3);
-    margin: 5% 0% 5% 0%;
+    /* background-color: rgba(7, 7, 7, 0.3); */
+    background-color: rgb(238, 196, 250);
+    margin: 5%;
+    width: 90%;
+    height: 30%;
 }
-.project_container {
+.project_thumbnail{ /*container for the thumbnail image*/
+    background-color:green;
+    float: left;
+    height: 100%;
+    width: 66%;
+}
+.project_description { /*this is for text inside the container*/
     text-align: center;
-    color:red;
+    width: 24%;
+    height: 83%;
+    background-color:red;
+    padding:5%;
+    float: right;
 }
-#mobile_intro{
+#intro{
     display: block;
 }
 #desktop_intro{
@@ -16,31 +29,27 @@
 
 /*medium breakpoint for tablets and some iPads*/
 @media (min-width: 576px) and (max-width: 767px){
-    iframe{
+    /* iframe{
         width:100%;
         height:30%;
-    }
+    } */
 }
 
 /*formatting for larger iPads*/
 @media (min-width: 768px) and (max-width: 1024px){
-    iframe{
+    /* iframe{
         width:100%;
         height:37%;
-    }
+    } */
 }
 
 /*formatting for desktop*/
 @media (min-width: 1025px){
-    iframe{
+    /* iframe{
         width:100%;
         height:110%;
-    }
-    #mobile_intro{
-        display: none;
-    }
-    #desktop_intro{
-        display: block; /*for toggling mobile vs desktop differences*/
+    } */
+    #intro{
         margin-top: 3%;
     }
     #my_work{

@@ -75,15 +75,17 @@ footer #top_button{
     background-image: url("../media/small_header_background.png");
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .banner h3{
     font-size: 10vw;
     letter-spacing: 4px;
     font-weight: 500;
-    text-align:center;
-    padding: 7% 0px;
+    margin-bottom: 6%;
     color: black;
-    display: block;
+    text-align: center;
 }
 .desktop_title{
     display: none;
