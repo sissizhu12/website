@@ -186,8 +186,8 @@ a:hover{
     }
     .banner {
         margin-top: 0%;
-        height: 60vh;
-        background-position: 75% 35%;
+        height: 45vh;
+        background-position: 75% 45%;
         background-size: 150%;
         z-index: 0;
     }
@@ -228,7 +228,7 @@ a:hover{
     #left_rect{
         position: absolute;
         top: 5%; /*relative of parent header container instead of browser*/
-        height: 15%;
+        height: 10%;
         width: 50%;
         background: rgba(52, 21, 21, .4); /*fourth value is alpha or opacity*/
         z-index: 1;
@@ -237,10 +237,10 @@ a:hover{
         padding: 5% 0% 5% 5%;
     }
     #right_rect{
-        height: 25%;
+        height: 20%;
         width: 50%;
         position: absolute;
-        top: 30%;
+        top: 20%;
         right: 0;
         z-index: 1;
         background: rgba(52, 21, 21, .4); /*fourth value is alpha or opacity*/
@@ -253,7 +253,7 @@ a:hover{
     }
     #role{
         font-size: 2vw;
-        margin-top: 5%;
+        margin-top: 0%;
     }
     .text_content{
         padding-top: 0%;
