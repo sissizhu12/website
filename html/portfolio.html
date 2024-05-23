@@ -23,7 +23,7 @@
 
     <div id = "left_rect">
         <p id ="name">sissi zhu<p>
-        <p id = "role">UI/UX & PRODUCT DESIGNER</p>
+        <!-- <p id = "role">UI/UX & PRODUCT DESIGNER</p> -->
     </div>
 
     <div id = "right_rect">
@@ -36,33 +36,46 @@
             <ul class = "personal"><a href="/html/personal.html">personal</a></ul>
         </nav>
     </div>
-    <header class= "banner">
+
+    <header class= "banner"> 
+        <!-- this shows up on mobile only -->
         <h3> portfolio</h3>
     </header>
+    <!-- this shows up on desktop only -->
+    <h3 class = "desktop_title"> portfolio</h3>
 
-    <h3 style="padding:5%"> portfolio</h3>
-    <div id = "hello" class = "text_content" style="color:white; letter-spacing: 2px">
-        <h2> hello! I'm Sissi. <br> I'm a UI/UX and product designer who is passionate about accessibility.
-        </h2>
-        <br>
-    </div>
+    <div class="intro_wrapper">
+        <div id = "hello_container"> 
+            <!-- contains background image and text -->
+            <em id = "greeting">hello!</em>
+            <h2 class = "hello_text" class = "text_content">
+                <span>
+                    <br><br>
+                    I'm Sissi, <br> a UI/UX and product designer <br>
+                    who is passionate <br>about accessibility.
+                </span>
+            </h2>
+            <br>
+        </div>
 
-    <div class = "text_content" id ="intro">
-        <h2 id = "my_work"> My design philosophy 
+        <div id="top_rect"></div>
+        <h2 id = "my_work" class = "text_content"> my design philosophy 
             <p> comes from my studies in psychology, computer science, and visual arts at the University of Toronto. I have a strong multidisciplinary understanding of human-computer interaction, especially for individuals with disabilities, low vision, or
                 are neurodivergent.<br><br>
-                Additionally, my coding experience allows me to design with a better understanding of technical constraints and technical language used by coders.
+                additionally, my coding experience allows me to design with a better understanding of technical constraints and technical language used by coders.
             </p>
         </h2>
+    </div>
 
+    <div id = "headers" class="text_content">
         <h3>table of contents</h3>
         <h2>UI/UX Design</h2>
     </div>
-
+    
     <!--ux projects-->
     <div class = "project_container">
         <div class = "project_thumbnail">
-            <img src="../media/cake_tester.png">
+            <img src="../media/projects/utradea/utradea_thumbnail.png">
         </div>
 
         <div class = "project_description">
@@ -74,6 +87,7 @@
     <!--product projects-->
     <div class = "project_container">
         <div class = "project_thumbnail">
+            <img src="/media/projects/website/"
         </div>
         here is where my product design
     </div>

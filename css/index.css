@@ -110,7 +110,7 @@ nav ul{
     background-color: aqua; 
   } */
   #nameText{
-    top: 30%;
+    top: 30%; 
   }
   #designer{
     top: 70%;
@@ -182,7 +182,7 @@ nav ul{
   #nameText{
     top: 30%;
     font-size: 4vw;
-    letter-spacing: 3px;
+    letter-spacing: 10px;
   }
   #designer{
     top: 55%;
