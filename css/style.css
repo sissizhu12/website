@@ -50,6 +50,8 @@ header{
 }
 footer{
     padding: 5% 10% 5% 10%;
+    width: 80%;
+    display: inline-block; 
 }
 footer h6{ 
     text-align: center;
@@ -175,7 +177,7 @@ a:hover{
     }
     footer{
         height: 20vh;
-        margin-bottom: 5% 
+        margin-bottom: 5%;
       }
     footer h6{
         font-size: 1vw;
@@ -300,5 +302,12 @@ a:hover{
     }
     #desktop_intro{
         display: visible;
+    }
+    .headers{
+        width: 100%;
+        text-align: center;
+        justify-items: center;
+        justify-content: center;
+        display: flex;
     }
 }

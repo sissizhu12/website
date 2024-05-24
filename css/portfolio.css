@@ -107,23 +107,20 @@
         float: right;
         width: 30%;
         height: 60%;
-        margin-top: 0%;
+        margin-top: 10%;
     }
     #my_work{
-        padding: 0%;
         font-size: 2.6vw;
         font-weight: 500 !important;
         /* letter-spacing: 10px; */
         line-height: 0px;
         /* line-height: 8vw; */
-        /* margin-left: 55%; */
         width: 33%;
-        height: 80%;
         float: left;
-        /* margin-top: 30%; */
+        margin-top: 5%;
         box-sizing: border-box;
         padding: 2%;
-        background-color: red;
+        background-color: rgba(255, 255, 255, 0.7);
         z-index: 0;
     }
    #my_work p{
@@ -131,6 +128,9 @@
     font-size: 2vw;
     line-height: normal;
     letter-spacing: 0px;
+   }
+   #design_philo{
+    padding-bottom: 5%;
    }
     /*TODO: debug this, it doesn't do anything*/
     .top_button {
