@@ -207,7 +207,7 @@ a:hover{
     }
     .desktop_title{
         display: block;
-        padding: 5%;
+        padding: 3%;
     }
     .small_header { /*container for small_nav*/
         height: 25vh;
@@ -308,6 +308,5 @@ a:hover{
         text-align: center;
         justify-items: center;
         justify-content: center;
-        display: flex;
     }
 }
