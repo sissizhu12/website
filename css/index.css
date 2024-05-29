@@ -11,21 +11,15 @@ a{
   background: rgba(52, 21, 21, .4); /*fourth value is alpha or opacity*/
 }
 #nameText{
-  position: absolute;
-  top: 35%;
   font-size: 10vw;
   letter-spacing: 4px;
-  font-weight: 500;
-  padding-left: 10%
+  padding: 15% 10% 0% 10%;
 }
 #designer{
-  position: absolute;
-  top: 60%;
   /*calculate function if user adjusts zoom level for accessibility*/
   font-size: calc(2.5vw+.5rem);
-  letter-spacing: 1.5px;
-  line-height: 4vh;
-  padding-left: 10%;
+  letter-spacing: .5px;
+  padding: 5% 10% 10% 10%;
 }
 nav{
   position: absolute;
@@ -46,13 +40,12 @@ nav ul{
 }
 #scrollDown{
   opacity: .4;
-  bottom: 0%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   height: 30%;
   width: 15%;
-  transform: translate(0px, 80svh);
+  transform: translate(0px, 80vh);
 }
 #aboutSection{
   padding: 5% 10% 0% 10%; /*left and right padding*/
@@ -106,18 +99,13 @@ nav ul{
 /*medium breakpoint for tablets and some iPads*/
 @media (min-width: 576px) and (max-width: 767px){
   /*for debugging purposes*/
-  /* body{
+  body{
     background-color: aqua; 
-  } */
-  #nameText{
-    top: 30%; 
   }
   #designer{
-    top: 70%;
     /*calculate function if user adjusts zoom level for accessibility*/
     font-size: calc(2.2vw + .5rem);
     letter-spacing: 2px;
-    line-height: 3vh;
   }
   nav{
     font-size: 1.8rem;
@@ -180,15 +168,15 @@ nav ul{
     overflow-y: hidden; /* Hide scrollbars */
   }
   #nameText{
-    top: 30%;
     font-size: 4vw;
     letter-spacing: 10px;
+    padding: 10% 10% 0% 10%;
   }
   #designer{
-    top: 55%;
     font-size: 2vw;
     letter-spacing: 1px;
     /* line-height: 8vh; */
+    padding: 0% 10% 10% 10%;
   }
   #nameIntro{
     top: 45%;
@@ -207,9 +195,10 @@ nav ul{
     grid-template-rows: repeat(3, 1fr);
   }
   #scrollDown{
+    opacity: 0.4;
     opacity: 0;
     width: 8%;
-    height: 30%
+    height: 25%
   }
   #about_anchor{
     letter-spacing: 1vw;
@@ -230,20 +219,23 @@ nav ul{
     line-height: normal;
     float: left;
     width: 30%;
-    padding: 5% 5% 0% 10%;
+    height: 47%;
+    padding: 5% 0% 5% 14%;
+    margin-top: -5%;
   }
   #cta{
     margin-top: 35%;
-    padding: 0%;
+    padding: 0% 0% 0% 0%;
     width: 90%;
-    height: 45%;
-    position:absolute;
+    height: 30%;
+    position: absolute;
     right:0;
+  }
+  .cta_text{
+    margin-top: -5%;
   }
   #cta p{
     font-size: 1.6vw;
-    margin-left: 5%;
-    margin-top: 8%;
   }
   #top_rect{
     background-color:  rgba(183, 25, 143, 0.3);
