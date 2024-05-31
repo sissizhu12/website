@@ -9,8 +9,8 @@ iframe{
     padding-bottom: 5%;
 }
 .divider{
-    height: 6vw;
-    padding: 5%;
+    height: 4vw;
+    padding: 3%;
 }
 /*pseudoelements are inline children of parent .lines*/
 .lines::before, .lines::after{
