@@ -91,7 +91,6 @@ footer #top_button{
     color: black;
     text-align: center;
 }
-
 .small_header { /*container for smalll_nav*/
     padding: 10%;
     text-align: center;
@@ -130,7 +129,28 @@ footer #top_button{
 a:hover{
     color:#e9c2fb; /*fyi this doesn't work in firefox*/
 }
-
+.project_intro ol{
+    margin-left: 10%;
+    font-size: 1rem;
+}
+.project_intro{
+    background-color: rgb(238, 196, 250);
+    box-sizing: border-box;
+    margin: 5%;
+    padding: 5%;
+}
+.body_content h2, .project_intro h2{
+    text-align: center;
+}
+.body_content img{
+    margin: 10%;
+    width: 80%;
+}
+.body_content p{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1rem;
+}
 /*medium breakpoint for tablets and some iPads*/
 @media (min-width: 576px) and (max-width: 767px){
     p {
@@ -307,5 +327,37 @@ a:hover{
         text-align: center;
         justify-items: center;
         justify-content: center;
+    }
+    .project_intro p{
+        font-size: 1.2rem;
+    }
+    .project_intro ol{
+        font-size: 1.2rem;
+    }
+    .project_intro{
+        padding: 3%;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 0%;
+    }
+    .body_content{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .body_content p{
+        font-size: 2vw;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 3%;
+        padding: 0%
+    }
+    .body_content h2{
+        margin-top: 5%;
+    }
+    .body_content img{
+        margin-left: 5%;
+        margin-top: 2%;
+        margin-bottom: 0%;
+        width: 90%;
     }
 }

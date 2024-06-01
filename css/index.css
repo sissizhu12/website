@@ -99,9 +99,9 @@ nav ul{
 /*medium breakpoint for tablets and some iPads*/
 @media (min-width: 576px) and (max-width: 767px){
   /*for debugging purposes*/
-  body{
+  /* body{
     background-color: aqua; 
-  }
+  } */
   #designer{
     /*calculate function if user adjusts zoom level for accessibility*/
     font-size: calc(2.2vw + .5rem);
