@@ -31,7 +31,7 @@
             <!--semantically, nav bar is a list of links-->
             <ul class = "about"><a href="/index.html">about</a></ul>
             <ul></ul><ul></ul><ul></ul>
-            <ul class = "portfolio"> <a href="/html/portfolio.html">portfolio</a></ul>
+            <ul class = "portfolio"><a href="/html/portfolio.html">portfolio</a></ul>
             <ul></ul><ul></ul><ul></ul>
             <ul class = "personal"><a href="/html/personal.html">personal</a></ul>
         </nav>
@@ -58,7 +58,7 @@
             <br>
         
             <div id = "my_work_desktop">
-                <h2 id = "design_philo"><em>my design philosophy</em></h2>
+                <h2 id = "design_philo" style="text-align: left;"><em>my design philosophy</em></h2>
                 <p>comes from my undergraduate studies in psychology, computer science, and visual arts at the University of Toronto.<br><br>I have a strong multidisciplinary understanding of human-computer interaction, especially for individuals with disabilities, low vision, or
                 who are neurodivergent.<br><br>
                 additionally, my coding experience allows me to design with a better understanding of technical constraints and technical language used by coders.
@@ -80,16 +80,17 @@
     
     <div class = "headers">
         <h3 id ="tab_of_contents">table of contents</h3>
-        <!-- <h4 style="margin-top: 0%; margin-bottom: 5%; text-align: center;font-size: 1.6rem;">UI/UX design</h4> -->
+        <h2 class ="center_headers"><em>case studies</em></h2>
     </div>
-    
+
+
     <div class = "projects">
         <div class = "project_row">
-            <div id = "utradea" class = "project_container">
+            <div id = "utradea" class = "project_container" style="margin-top: 0%;">
                 <!--utradea project-->
                 <a id="utradea_link" href="/html/portfolio/utradea.html">
                     <div class = "project_thumbnail">
-                        <img src="../media/projects/utradea/utradea pricing page thumbnail.png">
+                        <img src="../media/projects/utradea/utradea_pricing_page_thumbnail.png">
                     </div>
                 
                     <div class = "project_description">
@@ -99,7 +100,7 @@
                 </a>
             </div>
             
-            <!--personal website project-->
+            <!--portfolio website project-->
             <div id ="website" class = "project_container">
                 <a id="website_link" href="/html/portfolio/personal_site.html">
                     <div class = "project_thumbnail">
@@ -107,7 +108,7 @@
                     </div>
 
                     <div class = "project_description">
-                        <h2>personal website</h2>
+                        <h2>portfolio website</h2>
                         <p style="background-color: rgb(132, 207, 234)">UI/UX design</p>
                         <p style="background-color: rgb(247, 159, 219)">UX research</p>
                         <p style="background-color: rgb(157, 181, 254)">coding</p>
@@ -115,8 +116,7 @@
                 </a>
             </div>
         </div>
-        
-        <div class = "project_row">
+        <div class = "project_row" id="second_row">
             <!--sbl project-->
             <div id="sbl" class = "project_container">
                 <a id="sbl_link" href="/html/portfolio/sbl.html">
@@ -128,12 +128,11 @@
                         <h2>Slow Burn Leather ecommerce</h2>
                         <p style="background-color: rgb(132, 207, 234)">UI/UX design</p>
                         <p style="background-color: rgb(247, 159, 219)">UX research</p>
+                        <p style="background-color: rgb(157, 181, 254)">coding</p>
                     </div>
                 </a>
             </div>
     
-            <!-- <h2 id ="product_header"class = "headers">product design</h2> -->
-            <!--morya project-->
             <div id = "morya" class = "project_container">
                 <a id="morya_link" href="/html/portfolio/morya.html">
                     <div class = "project_thumbnail">
@@ -148,6 +147,36 @@
                 </a>
             </div>
         </div>
+
+        <h2 class ="center_headers"><em>portfolio</em></h2>
+
+        <div class = "project_row">
+            <!--sbl project-->
+            <div id="sbl" class = "project_container" style="margin-top: 0%;">
+                <a id="sbl_link" href="/html/portfolio/graphic_design.html">
+                    <div class = "project_thumbnail">
+                        <img src="../media/projects/graphic_design/graphic_design_thumbnail.png">
+                    </div>
+
+                    <div class = "project_description">
+                        <h2>graphic design</h2>
+                    </div>
+                </a>
+            </div>
+    
+            <!-- <h2 id ="product_header"class = "headers">product design</h2> -->
+            <!--morya project-->
+            <div id = "morya" class = "project_container">
+                <a id="morya_link" href="/html/portfolio/personal_art.html">
+                    <div class = "project_thumbnail">
+                        <img src="../media/projects/personal_art/personal_art_thumbnail.png">
+                    </div>
+
+                    <div class = "project_description">
+                        <h2>personal art</h2>
+                    </div>
+                </a>
+            </div>
     </div>
 
 

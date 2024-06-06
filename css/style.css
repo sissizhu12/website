@@ -14,16 +14,19 @@ body{
     padding: 5% 10% 0% 10%;
 }
 h2{
-    text-align: left;
+    text-align: center;
     font-size: 2rem;
     font-weight: 500;
-} 
+}
+.center_headers{
+    padding: 3%;
+}
 h3{
     text-align: center;
     letter-spacing: 6px; 
     font-size: 2rem;
     font-weight: 500;
-    padding: 5% 10% 0% 10%
+    padding: 5% 10% 0% 10%;
     /*no padding bottom bc image below has padding also*/
 }
 p{
@@ -129,7 +132,7 @@ footer #top_button{
 a:hover{
     color:#e9c2fb; /*fyi this doesn't work in firefox*/
 }
-.project_intro ol{
+.project_intro li{
     margin-left: 10%;
     font-size: 1rem;
 }
@@ -139,9 +142,6 @@ a:hover{
     margin: 5%;
     padding: 5%;
 }
-.body_content h2, .project_intro h2{
-    text-align: center;
-}
 .body_content img{
     margin: 10%;
     width: 80%;
@@ -150,6 +150,14 @@ a:hover{
     margin-left: 10%;
     margin-right: 10%;
     font-size: 1rem;
+}
+.body_content li{
+    margin-left: 15%;
+    margin-right: 10%;
+}
+.design_images img{
+    margin: 0% 5% 5% 5%;
+    width: 90%;
 }
 /*medium breakpoint for tablets and some iPads*/
 @media (min-width: 576px) and (max-width: 767px){
@@ -196,7 +204,7 @@ a:hover{
     }
     footer{
         height: 20vh;
-        margin-bottom: 5%;
+        margin-bottom: 0%;
       }
     footer h6{
         font-size: 1vw;
@@ -328,12 +336,6 @@ a:hover{
         justify-items: center;
         justify-content: center;
     }
-    .project_intro p{
-        font-size: 1.2rem;
-    }
-    .project_intro ol{
-        font-size: 1.2rem;
-    }
     .project_intro{
         padding: 3%;
         width: 80%;
@@ -344,20 +346,76 @@ a:hover{
         margin-left: 5%;
         margin-right: 5%;
     }
-    .body_content p{
-        font-size: 2vw;
-        margin-left: 0%;
-        margin-right: 0%;
-        margin-top: 3%;
-        padding: 0%
-    }
     .body_content h2{
         margin-top: 5%;
     }
+    /**changes**/
+    .project_text{
+        width: 30%;
+        float: left;
+        box-sizing: border-box;
+        padding: 2%;
+        /* background-color: red; */
+    }
     .body_content img{
-        margin-left: 5%;
-        margin-top: 2%;
-        margin-bottom: 0%;
+        margin: 0;
+        padding: 0;
+        width: 65%;
+        max-height: 100%;
+        float: right;
+        object-fit: contain;
+    }
+    .body_content{
+       /* height: 50%; */
+       /* background-color: blue !important; */
+       margin-bottom: 5%;
+       display: flex;
+       align-items: center;
+       justify-content: space-around;
+    }
+    .project_text li, .project_text p{
+        font-size: 1.2rem;
+        padding: 0%;
+    }
+    .body_content p{
+        margin: 0%;
+    }
+    #portfolio_last_project_text{
+        width: 60%;
+    }
+    strong {
+        font-weight: 600;
+    }
+    .design_images img {
+        height: 100%;
+        object-fit: contain;
+        margin: 0%;
+        margin-bottom: 2%;
+        width: 100%;
+    }
+    .image_row{
         width: 90%;
+        height: 60%;
+        margin-bottom: 2%;
+        display: flex;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #earrings_img{
+        width: 80%;
+        height: 80%;
+        margin-left: 10%;
+    }
+    #sbl_desktop_img{
+        height: 100%;
+    }
+    #sbl_mobile_img{
+        height: 130%;
+    }
+    #utradea_graphic_ad{
+        height: 55%;
+    }
+    #personal_art_gallery{
+        height: 400%;
     }
 }
