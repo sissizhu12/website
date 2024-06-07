@@ -51,7 +51,7 @@ header{
     display:none;
 }
 footer{
-    padding: 5% 10% 5% 10%;
+    padding: 2% 10% 5% 10%;
     width: 80%;
     display: inline-block; 
 }
@@ -132,15 +132,21 @@ footer #top_button{
 a:hover{
     color:#e9c2fb; /*fyi this doesn't work in firefox*/
 }
-.project_intro li{
+.project_popout li{
     margin-left: 10%;
     font-size: 1rem;
 }
-.project_intro{
+.project_popout{
     background-color: rgb(238, 196, 250);
     box-sizing: border-box;
     margin: 5%;
+    margin-bottom: 0%;
     padding: 5%;
+}
+.project_popout img{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%
 }
 .body_content img{
     margin: 10%;
@@ -336,7 +342,7 @@ a:hover{
         justify-items: center;
         justify-content: center;
     }
-    .project_intro{
+    .project_popout{
         padding: 3%;
         width: 80%;
         margin-left: 10%;
@@ -381,7 +387,7 @@ a:hover{
         margin: 0%;
     }
     #portfolio_last_project_text{
-        width: 60%;
+        width:100%;
     }
     strong {
         font-weight: 600;
@@ -416,6 +422,9 @@ a:hover{
         height: 55%;
     }
     #personal_art_gallery{
-        height: 400%;
+        height: 300%;
+    }
+    .project_popout img{
+        margin-top: 0%;
     }
 }
