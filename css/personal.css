@@ -89,9 +89,6 @@ img:not(footer img){
     iframe{
         height: 80%
     }
-    .text_content p{
-        font-size: 2vw;
-    }
     #my_work{
         display: inline;
     }

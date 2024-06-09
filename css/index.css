@@ -55,14 +55,19 @@ nav ul{
 }
 #cta { 
   background-color: rgba(7, 7, 7, 0.3);
-  width: 100%;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
   padding: 10% 0% 10% 0%;
-  height: 20%;
+  box-sizing: border-box;
+  height: 25%;
+}
+.cta_text{
+  padding: 5% 0% 5% 15%;
 }
 #cta p{ /*targets paragraph children inside cta class*/
   font-size: .9rem;
   color:white;
-  margin: 8% 0% -5% 10%;
   width:80%;
 }
 #top_rect{
@@ -93,7 +98,7 @@ nav ul{
   background-color: rgba(62, 43, 232, 0.3);
   width: 15%;
   height: 5%;
-  margin: -10% 0% 5% 7%;
+  margin: -8% 0% 5% 2%;
 }
 
 /*medium breakpoint for tablets and some iPads*/
@@ -214,25 +219,24 @@ nav ul{
     float: right;
   }
   #about_text{
-    font-size: 1.8vw;
     text-align: left;
     line-height: normal;
     float: left;
     width: 30%;
     height: 47%;
     padding: 5% 0% 5% 14%;
-    margin-top: -5%;
+    margin-top: -20%;
   }
   #cta{
-    margin-top: 35%;
-    padding: 0% 0% 0% 0%;
+    margin-top: -10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
     width: 90%;
-    height: 30%;
-    position: absolute;
-    right:0;
+    position: relative;
   }
   .cta_text{
-    margin-top: -5%;
+    margin-top: -10%;
+    padding: 6% 0% 5% 10%;
   }
   #cta p{
     font-size: 1.6vw;
@@ -245,33 +249,27 @@ nav ul{
   }
   #bot_rect{
     background-color: rgba(62, 43, 232, 0.3);
-    width: 30%;
-    height: 5%;
-    margin: 0% 0% 5% 75%;
+    width: 10%;
+    height: 10%;
+    margin: 3% 0% 15% 95%;
   }
   #rect1{
     background-color:rgba(119, 32, 206, 0.3);
     width: 15%;
-    height: 6%;
-    margin: -6% 0% -5% -5%;
+    height: 8%;
+    margin: -20% 0% -5% -5%;
   }
   #rect2{
     background-color:  rgba(62, 43, 232, 0.3);;
-    width: 15%;
-    height: 10%;
-    margin: 42% 0% 0% -5%;
+    width: 12%;
+    height: 15%;
+    margin: 45% 0% 0% -5%;
   }
   #small_rect{
     background-color: rgba(183, 25, 143, 0.3);
-    width: 20%;
-    height: 8%;
-    margin: -10% 0% 0% 70%;
-  }
-  #tiny_rect{
-    background-color: rgba(183, 25, 143, 0.3);
     width: 15%;
-    height: 10%;
-    margin: -11% 0% 0% 90%;
+    height: 8%;
+    margin: -35% 0% 0% 70%;
   }
   footer{
     margin-top: 20%; /*note this only applies to desktop home page*/

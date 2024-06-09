@@ -20,7 +20,7 @@
 }
 .hello_text{
     padding-left: 15%;
-    padding-top: 25%;
+    padding-top: 22%;
     position: relative;
     text-align: left;
 }
@@ -34,9 +34,9 @@
     margin: 0% 0% -6% -15%;
 }
 #bot_rect{
-    width: 120%;
-    height: 11%;
-    margin: -48% 0% 0% -5%;
+    width: 118%;
+    height: 13%;
+    margin: -64% 0% 0% -5%;
     background-color:rgba(94, 67, 249, 0.3);
 }
 #my_work_desktop{
@@ -57,8 +57,10 @@
     padding-bottom: 7%;
 }
 #tab_of_contents{
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 10%;
+    margin-bottom: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
 }
 .projects{
     width: 90%;
@@ -101,7 +103,7 @@
 }
 .project_description{ /*this is for inline text inside the container*/
     text-align: center;
-    padding: 5%;
+    padding: 2%;
 }
 .project_description h2{
     font-size: 1.6rem;
@@ -197,9 +199,7 @@
         background-color:rgb(95, 43, 118, .9);
         box-shadow: 0 0 30px 40px rgb(255, 255, 255, 0.2);
     }
-   #my_work_desktop p{
-        font-size: 2vw;
-   }
+
    #design_philo{
         padding-bottom: 3%;
         padding-top: 3%;
@@ -212,6 +212,9 @@
    #tab_of_contents{
         margin-bottom: 0%;
         margin-top: 3%;
+    }
+    .project_description{
+        padding:5%;
     }
     .projects{
         margin-bottom: 0%;
