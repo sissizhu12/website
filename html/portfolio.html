@@ -23,7 +23,7 @@
 
     <div id = "left_rect">
         <p id ="name">sissi zhu<p>
-        <p id = "role">UI/UX & PRODUCT DESIGNER</p>
+        <!-- <p id = "role">UI/UX & PRODUCT DESIGNER</p> -->
     </div>
 
     <div id = "right_rect">
@@ -31,50 +31,154 @@
             <!--semantically, nav bar is a list of links-->
             <ul class = "about"><a href="/index.html">about</a></ul>
             <ul></ul><ul></ul><ul></ul>
-            <ul class = "portfolio"> <a href="/html/portfolio.html">portfolio</a></ul>
+            <ul class = "portfolio"><a href="/html/portfolio.html">portfolio</a></ul>
             <ul></ul><ul></ul><ul></ul>
             <ul class = "personal"><a href="/html/personal.html">personal</a></ul>
         </nav>
     </div>
-    <header class= "banner">
-        <h3 style="padding:5%"> portfolio</h3>
+
+    <header class= "banner"> 
+        <!-- this shows up on mobile only -->
+        <h3> portfolio</h3>
     </header>
+    <!-- this shows up on desktop only -->
+    <h3 class = "desktop_title"> portfolio</h3>
 
-    <h3 class="desktop_title" style="padding:5%"> portfolio</h3>
-    <div class = "text_content" style="color:white; letter-spacing: 2px">
-        <h2> art and science are often seen as opposite subjects, but
-        I believe that the two worlds are actually collaborative in design.
-        </h2>
-        <br>
-    </div>
-
-    <div class = "text_content" id ="desktop_intro"> <!--only shown on desktop-->
-        <h2 id = "my_work">my work
-            <p>in user experience design is informed by my studies in psychology, cognitive (computer) science, and the visual arts.
-            each field helps me understand how humans interact with and perceive digital spaces and stimuli.
-            in learning about different health and cognitive conditions,
-            I’ve become incredibly passionate about accessibility friendly digital interfaces and
-            better integration of it into the human-computer interaction narrative.
-            </p>
-        </h2>
+    <div class="intro_wrapper">
+        <div id = "hello_container"> 
+            <!-- contains background image and text -->
+            <em id = "greeting">hello!</em>
+            <h2 class = "hello_text" class = "text_content">
+                <span>
+                    <br><br>
+                    I'm Sissi, <br> a UI/UX and product designer <br>
+                    who is passionate <br>about accessibility.
+                </span>
+            </h2>
+            <br>
         
+            <div id = "my_work_desktop">
+                <h2 id = "design_philo" style="text-align: left;"><em>my design philosophy</em></h2>
+                <p>comes from my undergraduate studies in <em>psychology, computer science, and visual arts</em> at the University of Toronto.<br><br>I have a strong multidisciplinary
+                understanding of <em>human-computer interaction,</em> especially for individuals with disabilities, low vision, or who are neurodivergent.<br><br>
+                additionally, my coding experience allows me to <em>better understand technical design constraints</em> and technical language used by coders.
+                </p>
+                </h2>
+            </div>
+        </div>
+    </div> 
+
+    <div id = "my_work_mobile" class="text_content">
+        <div id="top_rect"></div>
+        <h2 id = "design_philo" style="text-align: left;">my design philosophy</h2>
+        <p>comes from my undergraduate studies in <strong>psychology, computer science, and visual arts</strong> at the University of Toronto. <br><br> I have a strong multidisciplinary understanding of <strong>human-computer interaction</strong>, especially for individuals <br>with disabilities, low vision, or
+        <br>who are neurodivergent.<br><br>
+        additionally, my coding experience allows me to <strong>better understand technical design constraints</strong> and technical language <br>used by coders.
+        </p>
+        <div id="bot_rect"></div>
+    </div>
+    
+    <div class = "headers">
+        <h3 id ="tab_of_contents" style>table of contents</h3>
+        <h2 class ="center_headers"><em>case studies</em></h2>
     </div>
 
-    <section id="wrapper">
-        <p style = "color:rgb(247, 243, 248)">Prefer browsing a pdf version?</p>
-        <p>Click <a href="https://sissizhu.com/portfolio.pdf">here</a> to be redirected.</p>
-        <iframe id= "slides" src="https://docs.google.com/presentation/d/e/2PACX-1vSzNoanGLV63awX8ransmCTZZoK3rubruRW3oak5WreTqrOji_yZ__4IwAmzI7xRrdluCw3cKVQeZX7/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="25%" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-    </section>
 
-    <div class = "text_content" id="mobile_intro"> <!--only shown on mobile-->
-        <h2>my work</h2>
-        <p>in user experience design is informed by my studies in psychology, cognitive (computer) science, and the visual arts.
-        each field helps me understand how humans interact with and perceive digital spaces and stimuli.
-        in learning about different health and cognitive conditions,
-        I’ve become incredibly passionate about accessibility friendly digital interfaces and
-        better integration of it into the human-computer interaction narrative.
-        </p>  
+    <div class = "projects">
+        <div class = "project_row">
+            <div id = "utradea" class = "project_container" style="margin-top: 0%;">
+                <!--utradea project-->
+                <a id="utradea_link" href="/html/portfolio/utradea.html">
+                    <div class = "project_thumbnail">
+                        <img src="../media/projects/utradea/utradea_pricing_page_thumbnail.png">
+                    </div>
+                
+                    <div class = "project_description">
+                        <h2>Utradea digital platform</h2>
+                        <p style="background-color: rgb(132, 207, 234)">UI/UX design</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!--portfolio website project-->
+            <div id ="website" class = "project_container">
+                <a id="website_link" href="/html/portfolio/personal_site.html">
+                    <div class = "project_thumbnail">
+                        <img src="../media/projects/website/personal website thumbnail.png">
+                    </div>
+
+                    <div class = "project_description">
+                        <h2>portfolio website</h2>
+                        <p style="background-color: rgb(132, 207, 234)">UI/UX design</p>
+                        <p style="background-color: rgb(247, 159, 219)">UX research</p>
+                        <p style="background-color: rgb(157, 181, 254)">coding</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class = "project_row" id="second_row">
+            <!--sbl project-->
+            <div id="sbl" class = "project_container">
+                <a id="sbl_link" href="/html/portfolio/sbl.html">
+                    <div class = "project_thumbnail">
+                        <img src="../media/projects/sbl/sbl website thumbnail.png">
+                    </div>
+
+                    <div class = "project_description">
+                        <h2>Slow Burn Leather ecommerce</h2>
+                        <p style="background-color: rgb(132, 207, 234)">UI/UX design</p>
+                        <p style="background-color: rgb(247, 159, 219)">UX research</p>
+                        <p style="background-color: rgb(157, 181, 254)">coding</p>
+                    </div>
+                </a>
+            </div>
+    
+            <div id = "morya" class = "project_container">
+                <a id="morya_link" href="/html/portfolio/morya.html">
+                    <div class = "project_thumbnail">
+                        <img src="../media/projects/morya/morya jewelry thumbnail.png">
+                    </div>
+
+                    <div class = "project_description">
+                        <h2>Morya Jewelry</h2>
+                        <p style="background-color: rgb(218,108,249)">product design</p>
+                        <p style="background-color: rgb(247, 159, 219)">UX research</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <h2 class ="center_headers"><em>portfolio</em></h2>
+
+        <div class = "project_row">
+            <!--sbl project-->
+            <div id="sbl" class = "project_container" style="margin-top: 0%;">
+                <a id="sbl_link" href="/html/portfolio/graphic_design.html">
+                    <div class = "project_thumbnail">
+                        <img src="../media/projects/graphic_design/graphic_design_thumbnail.png">
+                    </div>
+
+                    <div class = "project_description">
+                        <h2>graphic design</h2>
+                    </div>
+                </a>
+            </div>
+    
+            <!-- <h2 id ="product_header"class = "headers">product design</h2> -->
+            <!--morya project-->
+            <div id = "morya" class = "project_container">
+                <a id="morya_link" href="/html/portfolio/personal_art.html">
+                    <div class = "project_thumbnail">
+                        <img src="../media/projects/personal_art/personal_art_thumbnail.png">
+                    </div>
+
+                    <div class = "project_description">
+                        <h2>personal art</h2>
+                    </div>
+                </a>
+            </div>
     </div>
+
 
     <footer>
         <a id ="top_button" href="#"><h6>back to top</h6></a>

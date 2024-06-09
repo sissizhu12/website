@@ -1,75 +1,247 @@
 /*this is a document of css styling for the portfolio page.*/
-#wrapper{
-    background-color: rgba(7, 7, 7, 0.3);
-    padding: 10%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+#hello_container{
+    position: relative; 
+    width: 100%;
+    height: 70%;
+    background-image: url("../media/galaxy_watercolor\ .JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; /*horizontally and vertically centered */
+    box-shadow: 0 0 30px 40px rgb(205, 148, 252) inset;
+    color:white;
+    letter-spacing: 2px;
 }
-#wrapper p{
-    margin: 5%;
+#greeting{
+    font-size: 4rem;
+    font-weight: bold;
+    padding-left: 40%;
+    position: absolute;
+    padding-top: 20%;
+}
+.hello_text{
+    padding-left: 15%;
+    padding-top: 22%;
+    position: relative;
+    text-align: left;
+}
+.hello_text span{
+    background-color: rgb(95, 43, 118);
+}
+#top_rect{
+    background-color:  rgba(183, 25, 143, .3);
+    width: 110%;
+    height: 5%;
+    margin: 0% 0% -6% -15%;
+}
+#bot_rect{
+    width: 118%;
+    height: 13%;
+    margin: -64% 0% 0% -5%;
+    background-color:rgba(94, 67, 249, 0.3);
+}
+#my_work_desktop{
+    display: none;
+}
+#my_work_mobile{
+    font-size: 2.6vw;
+    /* letter-spacing: 10px; */
+    line-height: 0px;
+    padding-bottom: 15%;
+}
+#my_work_mobile p{
+    display: inline; /*makes text appear on same line as "my work" heading*/
+    line-height: normal;
+    letter-spacing: 0px;
+}
+#design_philo{
+    padding-bottom: 7%;
+}
+#tab_of_contents{
+    margin-top: 10%;
+    margin-bottom: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+.projects{
+    width: 90%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.projects a{
+    text-decoration: none;
+}
+.projects a:hover{
+    color: rgb(95, 43, 118, .9);
+}
+.projects a{
+    color:black;
+}
+.project_container{
+    /* background-color: rgba(7, 7, 7, 0.3); */
+    background-color: rgb(238, 196, 250);
+    width: 100%;
+    height: 30%;
+    margin-top: 5%;
+}
+/*container for the thumbnail image*/
+.project_thumbnail{
+    width: 98%;
+    height: 60%;
+    padding: 1%;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project_thumbnail img{
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.project_description{ /*this is for inline text inside the container*/
+    text-align: center;
+    padding: 2%;
+}
+.project_description h2{
+    font-size: 1.6rem;
+    margin-bottom: 5%;
     text-align: center;
 }
-#mobile_intro{
-    display: block;
+.project_description p{
+    font-size: 1rem;
+    padding: 1%; /*changes "thickness" of highlighted text*/
+    display: inline;
 }
-#desktop_intro{
-    display: none;
+#intro{
+    display: block;
 }
 
 /*medium breakpoint for tablets and some iPads*/
 @media (min-width: 576px) and (max-width: 767px){
-    iframe{
-        width:100%;
-        height:30%;
+    .project_container{
+        height: 50%;
     }
 }
 
 /*formatting for larger iPads*/
 @media (min-width: 768px) and (max-width: 1024px){
-    iframe{
-        width:100%;
-        height:37%;
+    #hello_container{
+        position: relative; 
+        width: 100%;
+        height: 95%;
+    }
+    .project_container{
+        height: 60%;
+    }
+    #bot_rect{
+        margin-top: -32%;
+    }
+    #my_work_mobile{
+        padding-bottom: 10%;
     }
 }
 
 /*formatting for desktop*/
 @media (min-width: 1025px){
-    iframe{
-        width:100%;
-        height:110%;
+    #intro_wrapper{
+        width: 100%;
+        height: 100%;
     }
-    #mobile_intro{
+    .desktop_title{
+        /* note: this overrides the usual padding to make intro_wrapper text above the fold */
+        padding-bottom: 1%;
+    }
+    #greeting{
+        padding-top: 6%;
+        padding-left: 30%;
+        font-size: 5vw;
+    }
+    #hello_container{
+        height: 230%;
+        background-position: 0% 80%;
+    }
+    .hello_text{
+        padding-left: 30%;
+        padding-top: 6%;
+        width: 50%;
+    }
+    #top_rect{
+        float: left;
+        width: 50%;
+        height: 15%;
+        margin-top: 3%;
+        margin-left: 25%;
+        background-color:rgba(246, 22, 205, 0.3);
+    }
+    #bot_rect{
+        float: right;
+        width: 10%;
+        height: 15%;
+        margin-top: -10%;
+        margin-right: 20%;
+        background-color:rgb(95, 43, 118, 0.3);
+    }
+    #my_work_mobile{
         display: none;
     }
-    #desktop_intro{
-        display: block; /*for toggling mobile vs desktop differences*/
+    #my_work_desktop{
+        display: block;
+        line-height: 0px;
+        word-spacing: .2rem;
+        width: 55%;
+        box-sizing: border-box;
+        padding: 2%;
+        margin-left: 23%;
+        margin-top: 5%;
+        background-color:rgb(95, 43, 118, .9);
+        box-shadow: 0 0 30px 40px rgb(255, 255, 255, 0.2);
+    }
+
+   #design_philo{
+        padding-bottom: 3%;
+        padding-top: 3%;
+        font-weight: bold;
+        font-size: 3vw;
+   }
+   #product_header{
+        display:none
+   }
+   #tab_of_contents{
+        margin-bottom: 0%;
         margin-top: 3%;
     }
-    #my_work{
-       font-size: 2.6vw;
-       font-weight: 500 !important;
-       /* letter-spacing: 10px; */
-       display: inline;
-       line-height: 0px;
-       /* line-height: 8vw; */
+    .project_description{
+        padding:5%;
     }
-   #my_work p{
-    display: inline; /*makes text appear on same line as "my work" heading*/
-    font-size: 2vw;
-    line-height: normal;
-    letter-spacing: 0px;
-    margin-right: 10px;
-   }
-    #wrapper{
+    .projects{
         margin-bottom: 0%;
+        margin-top: 0%;
     }
-    #wrapper p{
+   .project_container{
+        width: 49%;
+        height: 80%;
+        margin-top: 0%;
+        display: inline-block;
+   }
+   .project_row{
+        width: 100%;
+        height: auto;
         margin: 0%;
-        margin-bottom: 5%;
-        text-align: center;
-        font-size: 2vw;
-    }
-    /*TODO: debug this, it doesn't do anything*/
+        display: flex;
+        justify-content: space-between;
+   }
+   #second_row{
+        margin-top: 5%;
+   }
+   /*container for the thumbnail image*/
+   .project_thumbnail{
+        width: 98%;
+        min-height: 60%;
+        max-height: 100%;
+   }
     .top_button {
         text-decoration: underline !important;
     }
