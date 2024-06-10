@@ -2,6 +2,9 @@
 .my_work{
     letter-spacing: 2px;
 }
+a{
+    color:rgb(84, 17, 151);
+}
 iframe{
     display: block;
     width: 80%;
@@ -37,7 +40,7 @@ iframe{
     margin-top: 3%;
 }
 img:not(footer img){
-    padding: 5% 10% 5% 10%;
+    padding: 2% 10% 2% 10%;
     width: 90%;
 }
 .gallery-wrapper > div{ /*child selector for divs inside wrapper, including captions*/
@@ -46,10 +49,7 @@ img:not(footer img){
      align-items: center;
 }
 .gallery-wrapper p{
-    font-size: .6rem;
-}
-.caption p{
-    color:rgba(52, 21, 21, .4);
+    font-size: .8rem;
 }
 .flex_container{
     display:none;
