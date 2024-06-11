@@ -64,21 +64,21 @@ nav ul{
 
 }
 .cta_text {
-  padding: 0% 0% 5% 10%;
+  padding: 0% 5% 5% 5%;
   box-sizing: border-box;
   margin-left: 13%;
-  color:white;
-  width:70%;
+  color: white;
+  width: 80%;
 }
 #cta_opening{
   font-size: 1.4rem
 }
 #cta a{
   font-weight: 600;
-  color:rgb(247, 233, 254);
+  color: rgb(247, 233, 254);
 }
 #top_rect{
-  background-color:  rgba(183, 25, 143, 0.3);
+  background-color: rgba(183, 25, 143, 0.3);
   width: 20%;
   height: 5%;
   margin: 5% 0% -10% -5%;

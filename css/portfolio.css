@@ -35,8 +35,8 @@
 }
 #bot_rect{
     width: 118%;
-    height: 13%;
-    margin: -64% 0% 0% -5%;
+    height: 12%;
+    margin: -50% 0% 0% -5%;
     background-color:rgba(94, 67, 249, 0.3);
 }
 #my_work_desktop{
@@ -106,8 +106,8 @@
     padding: 2%;
 }
 .project_description h2{
-    font-size: 1.6rem;
     margin-bottom: 5%;
+    font-size: 1.6rem;
     text-align: center;
 }
 .project_description p{
@@ -215,6 +215,12 @@
     }
     .project_description{
         padding:5%;
+    }
+    .project_description h2{
+        font-size: 1.6vw; /*same font size as paragraph text but semantic difference for styling*/
+    }
+    .project_description p{
+        font-size: 1.4vw;
     }
     .projects{
         margin-bottom: 0%;

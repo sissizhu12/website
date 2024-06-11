@@ -19,7 +19,7 @@ h2{
     font-weight: 500;
 }
 .center_headers{
-    padding: 3%;
+    padding: 5%;
 }
 h3{
     text-align: center;
@@ -147,7 +147,7 @@ a:hover{
     margin-top: 5%
 }
 .body_content img{
-    margin: 10%;
+    margin: 5% 10% 5% 10%;
     width: 80%;
 }
 .body_content p{
@@ -225,6 +225,9 @@ a:hover{
         background-position: 75% 50%;
         background-size: 150%;
         z-index: 0;
+    }
+    .center_headers{
+        padding: 3%;
     }
     .banner h3{
         font-size: 30vh;
