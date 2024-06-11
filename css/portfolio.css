@@ -39,6 +39,7 @@
     margin: -42% 0% 0% -5%;
     background-color:rgba(94, 67, 249, 0.3);
     position: absolute;
+    z-index: -1;
 }
 #my_work_desktop{
     display: none;
