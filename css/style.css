@@ -86,6 +86,9 @@ footer #top_button{
     align-items: center;
     justify-content: center;
 }
+#sbl_banner{
+    height: 15vh;
+}
 .banner h3{
     font-size: 9vw;
     letter-spacing: 4px;
@@ -127,6 +130,9 @@ footer #top_button{
 }
  nav a, .small_nav a, footer .icons a{
     text-decoration:none;
+}
+.project_text a{
+    color: inherit;
 }
 a:hover{
     color:#e9c2fb; /*fyi this doesn't work in firefox*/
@@ -225,6 +231,9 @@ a:hover{
         background-position: 75% 50%;
         background-size: 150%;
         z-index: 0;
+    }
+    #sbl_banner{
+        height: 25vh;
     }
     .center_headers{
         padding: 3%;
