@@ -88,7 +88,7 @@ footer .icons{
     align-items: center;
     justify-content: center;
 }
-#sbl_banner{
+#sbl_banner, #utradea_banner{
     height: 20vh;
 }
 .banner h3{
@@ -234,7 +234,7 @@ a:hover{
         background-size: 150%;
         z-index: 0;
     }
-    #sbl_banner{
+    #sbl_banner, #utradea_banner{
         height: 25vh;
     }
     .center_headers{
@@ -366,7 +366,7 @@ a:hover{
         margin-top: 5%;
     }
     .project_text{
-        width: 40%;
+        width: 45%;
         float: left;
         box-sizing: border-box;
         padding: 2%;
@@ -436,6 +436,9 @@ a:hover{
     #utradea_problem_img{
         width: 100%;
         margin-top: 5%;
+    }
+    #sbl_user_personas{
+        height: 10%;
     }
     .project_popout img{
         margin-top: 0%;
