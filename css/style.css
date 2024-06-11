@@ -170,6 +170,17 @@ a:hover{
     margin: 0% 5% 5% 5%;
     width: 90%;
 }
+.graphic_design{
+    object-fit: contain
+}
+.graphic_design img{
+    max-width: 90%;
+    margin-bottom: 2%;
+}
+.graphic_design p{
+    max-width: 90%;
+    margin-left:5%;
+}
 /*medium breakpoint for tablets and some iPads*/
 @media (min-width: 576px) and (max-width: 767px){
     p {
@@ -442,5 +453,12 @@ a:hover{
     }
     .project_popout img{
         margin-top: 0%;
+    }
+    .graphic_design img{
+        max-width: 70%;
+        height:auto
+    }
+    .graphic_design p{
+        max-width: 90%;
     }
 }
