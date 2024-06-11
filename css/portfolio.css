@@ -2,7 +2,7 @@
 #hello_container{
     position: relative; 
     width: 100%;
-    height: 70%;
+    height: 80%;
     background-image: url("../media/galaxy_watercolor\ .JPG");
     background-size: cover;
     background-repeat: no-repeat;
@@ -14,7 +14,7 @@
 #greeting{
     font-size: 4rem;
     font-weight: bold;
-    padding-left: 40%;
+    padding-left: 35%;
     position: absolute;
     padding-top: 20%;
 }
@@ -30,14 +30,15 @@
 #top_rect{
     background-color:  rgba(183, 25, 143, .3);
     width: 110%;
-    height: 5%;
+    height: 8%;
     margin: 0% 0% -6% -15%;
 }
 #bot_rect{
-    width: 118%;
-    height: 12%;
-    margin: -60% 0% 0% -5%;
+    width: 95%;
+    height: 15%;
+    margin: -40% 0% 0% -5%;
     background-color:rgba(94, 67, 249, 0.3);
+    position: absolute;
 }
 #my_work_desktop{
     display: none;
@@ -46,7 +47,6 @@
     font-size: 2.6vw;
     /* letter-spacing: 10px; */
     line-height: 0px;
-    padding-bottom: 15%;
 }
 #my_work_mobile p{
     display: inline; /*makes text appear on same line as "my work" heading*/
@@ -102,7 +102,7 @@
 }
 .project_description{ /*this is for inline text inside the container*/
     text-align: center;
-    padding: 2%;
+    padding: 5%;
 }
 .project_description h2{
     margin-bottom: 5%;

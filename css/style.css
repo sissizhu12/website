@@ -15,7 +15,7 @@ body{
 }
 h2{
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 500;
 }
 .center_headers{
@@ -51,14 +51,14 @@ header{
     display:none;
 }
 footer{
-    padding: 2% 10% 5% 10%;
-    width: 80%;
+    padding: 2% 5% 5% 5%;
+    width: 90%;
     display: inline-block; 
 }
 footer h6{ 
     text-align: center;
     font-weight: 400;
-    font-size: 2vw;
+    font-size: .8rem;
 }
 footer img{
     width: 40px;
@@ -72,9 +72,11 @@ footer .icons{
     margin-left: auto;
     margin-right: auto;
 }
-footer #top_button{
+#top_button h6{
     text-align: center;
     color:rgb(84, 17, 151);
+    font-size: 1.2rem;
+    text-decoration: underline;
 }
 .banner { /*banner is a child element of header*/
     height: 10vh;
@@ -208,15 +210,15 @@ a:hover{
 
 /*formatting for desktop*/
 @media (min-width: 1025px){
-    footer #top_button h6{
-        font-size: 1.4vw;
+    #top_button h6{
+        font-size: 1.6vw;
     }
     footer{
         height: 20vh;
         margin-bottom: 0%;
       }
     footer h6{
-        font-size: 1vw;
+        font-size: 1.2vw;
     }
     footer .icons{
         width: 130px;
