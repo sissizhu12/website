@@ -13,7 +13,7 @@ a{
 #nameText{
   font-size: 10vw;
   letter-spacing: 4px;
-  padding: 15% 10% 0% 10%;
+  padding: 8% 10% 0% 10%;
 }
 #designer{
   /*calculate function if user adjusts zoom level for accessibility*/
@@ -45,7 +45,7 @@ nav ul{
   margin-right: auto;
   height: 30%;
   width: 15%;
-  transform: translate(0px, 80vh);
+  transform: translate(0px, 78vh);
 }
 #aboutSection{
   padding: 5% 10% 0% 10%; /*left and right padding*/
@@ -53,17 +53,15 @@ nav ul{
 #about_text{
   padding: 5%;
 }
-#cta { 
+#cta{ 
   background-color: rgba(7, 7, 7, 0.4);
-  width: 90%;
-  margin-left: 5%;
+  width: 80%;
+  margin-left: 10%;
   margin-top: 5%;
-  padding: 10% 0% 10% 0%;
+  padding: 8% 0% 8% 0%;
   box-sizing: border-box;
-  height: 25%;
-
 }
-.cta_text {
+.cta_text{
   padding: 0% 5% 5% 5%;
   box-sizing: border-box;
   margin-left: 13%;
@@ -80,13 +78,13 @@ nav ul{
 #top_rect{
   background-color: rgba(183, 25, 143, 0.3);
   width: 20%;
-  height: 5%;
+  height: 8%;
   margin: 5% 0% -10% -5%;
 }
 #bot_rect{
   background-color: rgba(62, 43, 232, 0.3);
   width: 30%;
-  height: 5%;
+  height: 8%;
   margin: -10% 0% 5% 75%;
 }
 #left_rect{
@@ -104,8 +102,8 @@ nav ul{
 #small_rect{
   background-color: rgba(62, 43, 232, 0.3);
   width: 15%;
-  height: 5%;
-  margin: -8% 0% 5% 2%;
+  height: 6%;
+  margin: -8% 0% 5% 5%;
 }
 
 /*medium breakpoint for tablets and some iPads*/
@@ -230,13 +228,13 @@ nav ul{
     line-height: normal;
     float: left;
     width: 30%;
-    height: 47%;
     padding: 5% 0% 5% 14%;
     margin-top: -20%;
   }
   #cta{
+    padding: 0;
     margin-top: -10%;
-    margin-bottom: 10%;
+    margin-bottom: 0%;
     margin-left: 10%;
     width: 90%;
     position: relative;
@@ -268,7 +266,7 @@ nav ul{
   }
   #rect2{
     background-color:  rgba(62, 43, 232, 0.3);;
-    width: 12%;
+    width: 17%;
     height: 15%;
     margin: 45% 0% 0% -5%;
   }
@@ -276,9 +274,9 @@ nav ul{
     background-color: rgba(183, 25, 143, 0.3);
     width: 15%;
     height: 8%;
-    margin: -35% 0% 0% 70%;
+    margin: -20% 0% 0% 70%;
   }
   footer{
-    margin-top: 20%; /*note this only applies to desktop home page*/
+    margin-top: 16%; /*note this only applies to desktop home page*/
   }
 }

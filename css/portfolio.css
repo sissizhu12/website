@@ -36,7 +36,7 @@
 #bot_rect{
     width: 95%;
     height: 15%;
-    margin: -40% 0% 0% -5%;
+    margin: -42% 0% 0% -5%;
     background-color:rgba(94, 67, 249, 0.3);
     position: absolute;
 }
@@ -198,7 +198,6 @@
         background-color:rgb(95, 43, 118, .9);
         box-shadow: 0 0 30px 40px rgb(255, 255, 255, 0.2);
     }
-
    #design_philo{
         padding-bottom: 3%;
         padding-top: 3%;
