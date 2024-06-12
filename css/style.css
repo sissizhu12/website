@@ -171,15 +171,22 @@ a:hover{
     width: 90%;
 }
 .graphic_design{
-    object-fit: contain
+    width: 90%;
+    padding: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    object-fit: contain;
+    text-align: center;
 }
 .graphic_design img{
-    max-width: 90%;
-    margin-bottom: 2%;
+    width: 100%;
 }
 .graphic_design p{
     max-width: 90%;
     margin-left:5%;
+    margin-right:5%;
+    margin-top: 2%;
+    margin-bottom:5%;
 }
 /*medium breakpoint for tablets and some iPads*/
 @media (min-width: 576px) and (max-width: 767px){
@@ -249,7 +256,7 @@ a:hover{
         height: 25vh;
     }
     .center_headers{
-        padding: 3%;
+        padding: 2%;
     }
     .banner h3{
         font-size: 30vh;
@@ -393,7 +400,7 @@ a:hover{
     .body_content{
         margin-left: 5%;
         margin-right: 5%;
-        margin-bottom: 5%;
+        margin-bottom: 3%;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -438,9 +445,6 @@ a:hover{
     #sbl_mobile_img{
         height: 130%;
     }
-    #utradea_graphic_ad{
-        height: 55%;
-    }
     #personal_art_gallery{
         height: 300%;
     }
@@ -448,17 +452,32 @@ a:hover{
         width: 100%;
         margin-top: 5%;
     }
-    #sbl_user_personas{
-        height: 10%;
+    #sbl_user_personas, #sbl_stats_card, #sbl_competitors{
+        width: 40%;
+    }
+    #sbl_template{
+        width: 60%;
+        padding-left:10%
+    }
+    #morya_analysis{
+        width: 50%;
+    }
+    #sbl_custom_code_img{
+        width: 50%
+    }
+    #sbl_custom_code_text{
+        width: 100%;
     }
     .project_popout img{
-        margin-top: 0%;
+        margin-top: 2%;
     }
     .graphic_design img{
         max-width: 70%;
-        height:auto
+        display: flex;
+        padding-left: 15%;
+        padding-left: 15%;
     }
     .graphic_design p{
-        max-width: 90%;
+        width: 96%;
     }
 }
