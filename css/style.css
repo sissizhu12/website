@@ -8,7 +8,7 @@
 /*TODO: use JS to slow down scroll time*/
 body{
     background-color: rgb(205, 148, 252);
-    font-family:"Baskerville,Garamond,Times New Roman,serif";
+    font-family: "Times New Roman", Times, Georgia, serif;
 }
 .text_content{
     padding: 5% 10% 0% 10%;

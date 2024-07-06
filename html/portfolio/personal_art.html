@@ -40,11 +40,16 @@
     <h3 class="desktop_title">personal art</h3>
 
     <div class="design_images" style="margin-top:5%">
-        <img src="/media/projects/personal_art/personal_art_gallery.jpg" id="personal_art_gallery"
-        alt="collage containg 7 images: a digital drawing of a crying face lineart with blue background, a fox girl looking at a magical orb in her hands against green forestry background,
-        a digital painitng of Raven from Teen Titans pulling on her long cloak under a streetlamp, a girl with short white hair and a constellation dress standing in pink clouds,
-        a coloured sketch of a blonde girl with white clothes sitting in space and smiling, watercolour painting of a girl with blue hair, skin, and wings made of water looking at rainbow coloured galaxy,
-        and a ballpen sketch of a girl with sunglasses happily sitting under an umbrella with a cat with matching glasses on a sandy beach">
+        <picture>
+            <!-- First choice for browser --->
+            <source srcset="/media/projects/personal_art/personal_art_gallery.webp" type="image/webp" />
+            <!-- Fallback image used by browser if picture or webp not supported--->
+            <img src="/media/projects/personal_art/personal_art_gallery.jpg" id="personal_art_gallery"
+            alt="collage containing 7 images: a digital drawing of a crying face lineart with blue background, a fox girl looking at a magical orb in her hands against green forestry background,
+            a digital painitng of Raven from Teen Titans pulling on her long cloak under a streetlamp, a girl with short white hair and a constellation dress standing in pink clouds,
+            a coloured sketch of a blonde girl with white clothes sitting in space and smiling, watercolour painting of a girl with blue hair, skin, and wings made of water looking at rainbow coloured galaxy,
+            and a ballpen sketch of a girl with sunglasses happily sitting under an umbrella with a cat with matching glasses on a sandy beach">
+        </picture>
     </div>
 
     <footer>
