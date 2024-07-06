@@ -13,7 +13,13 @@ body{
 .text_content{
     padding: 5% 10% 0% 10%;
 }
-h2{
+h1{/*left aligned subheaders within section*/
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: 200;
+    font-style: italic;
+}
+h2{ /*centered, italicized section headers*/
     text-align: center;
     font-size: 1.8rem;
     font-weight: 500;
@@ -21,7 +27,7 @@ h2{
 .center_headers{
     padding: 5%;
 }
-h3{
+h3{ /*centered, large kerning page headers*/
     text-align: center;
     letter-spacing: 6px; 
     font-size: 2rem;
@@ -153,6 +159,11 @@ a:hover{
     width: 80%;
     margin-left: 10%;
     margin-top: 5%
+}
+.popout_text{
+    font-size:1.2rem;
+    color:rgb(128,0,128);
+    padding: 2%;
 }
 .body_content img{
     margin: 5% 10% 5% 10%;
@@ -348,16 +359,19 @@ a:hover{
         text-align: center;
         align-items: center;
     }
-    h3{
+    h1{/*left aligned subheaders within section*/
+        font-size: 2.2vw;
+    }
+    h2{/*centered, italicized section headers*/
+        font-size: 2.6vw;
+        font-weight: 300;
+    } 
+    h3{/*centered, large kerning page headers*/
         font-size: 3vw;
         letter-spacing: 10px; 
         font-weight: 500;
         padding: 0% 10% 0% 10%
     }
-    h2{
-        font-size: 2.6vw;
-        font-weight: 300;
-    } 
     iframe{
         width:100%;
         height:65%;
@@ -373,6 +387,10 @@ a:hover{
         text-align: center;
         justify-items: center;
         justify-content: center;
+    }
+    .popout_text{
+        font-size: 2.2vw;
+        padding: 0%;
     }
     .project_popout{
         padding: 3%;
@@ -413,6 +431,9 @@ a:hover{
     .body_content p{
         margin: 0%;
     }
+    .body_content li {
+        margin-left: 10%;
+      }
     #portfolio_last_project_text{
         width:100%;
     }
@@ -452,8 +473,12 @@ a:hover{
         width: 100%;
         margin-top: 5%;
     }
-    #sbl_user_personas, #sbl_stats_card, #sbl_competitors{
+    #sbl_user_personas, #sbl_competitors{
         width: 40%;
+        padding-left: 20%;
+    }
+    #sbl_stats_card{
+        width: 55%;
     }
     #sbl_template{
         width: 60%;
