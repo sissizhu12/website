@@ -8,6 +8,8 @@
     <link rel="icon" type="image/x-icon" href="/media/favicon.png">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/portfolio.css">
+    <!-- note that portfolio.css styling of links overrides style.css styling -->
+    <script src="/js/footer.js" type="text/javascript" defer></script>
 </head>
 
 <body>
@@ -56,7 +58,6 @@
                 </span>
             </h2>
             <br>
-        
             <div id = "my_work_desktop">
                 <h2 id = "design_philo" style="text-align: left;"><strong><em>my design philosophy</strong></em></h2>
                 <p>comes from my undergraduate studies in <strong><em>psychology, computer science, and visual arts</em></strong> at the University <br> of Toronto.<br><br>I have a strong multidisciplinary
@@ -69,14 +70,18 @@
     </div> 
 
     <div id = "my_work_mobile" class="text_content">
-        <div id="top_rect"></div>
-        <h2 id = "design_philo" style="text-align: left;">my design philosophy</h2>
-        <p>comes from my undergraduate studies in <em>psychology, computer science, and visual arts</em></strong> at the University of Toronto.<br><br>
-        I have a strong multidisciplinary understanding of <em>human-computer interaction</em>, especially for individuals
-        with disabilities, low vision, or <br>who are neurodivergent.<br><br>
-        additionally, my coding experience allows me to <em>better understand technical design constraints</em> and technical language used by coders.
-        </p>
-        <div id="bot_rect"></div>
+        <div id="top_rect">
+            <h2 id = "design_philo" style="text-align: left;">my design philosophy</h2>
+        </div>
+        <p>comes from my undergraduate studies in <br><em>psychology, computer science, and visual arts</em> at the University of Toronto.<br><br>
+        <div id="bot_rect">
+            <p>I have a strong multidisciplinary understanding of <em>human-computer interaction</em>, especially for individuals
+            with disabilities, low vision, or <br>who are neurodivergent.<br>
+            </p>
+        </div>
+
+        <p><br>additionally, my coding experience allows me to <em>better understand technical design constraints</em> and technical language used by coders.</p>
+        </div>
     </div>
     
     <div class = "headers">
@@ -179,23 +184,6 @@
             </div>
         </div>
     </div>
-
-    <footer>
-        <a id ="top_button" href="#"><h6>back to top</h6></a>
-        <br>
-        <h6> website design and coding by yours truly✨
-        <br>
-        Copyright © 2024 Sissi Zhu. All Rights Reserved.
-        </h6>
-        <div class = "icons">
-            <a href="https://github.com/sissizhu12/website">
-                <img src="/media/github-icon.svg" alt="Github icon link"/>
-            </a>
-            <a href="https://ca.linkedin.com/in/sissizhu12">
-                <img src="/media/linkedin-icon.svg" alt="Linkedin icon link"/>
-            </a>
-        </div>
-    </footer>
 </body>
 </html>
 

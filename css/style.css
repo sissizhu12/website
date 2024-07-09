@@ -72,8 +72,9 @@ footer img{
     vertical-align: top;
 }
 footer .icons{
+    /* container for icon images as a group*/
     margin-top: 5%;
-    width: 90px;
+    width: 140px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -199,6 +200,25 @@ a:hover{
     margin-top: 2%;
     margin-bottom:5%;
 }
+.next_project{
+    margin-top: 5%;
+    margin-bottom: 0%;
+    height: 28%;
+}
+#enjoy_rect{
+    background-color: rgba(183, 25, 143, 0.3);
+    color: rgb(255, 255, 255);
+    width: 40%;
+    padding: 8%;
+}
+#next_rect{
+    background-color: rgba(62, 43, 232, 0.3);
+    color: rgb(0, 0, 0);
+    width: 70%;
+    float: right;
+    padding: 5%;
+    margin-top: -5%;
+}
 /*medium breakpoint for tablets and some iPads*/
 @media (min-width: 576px) and (max-width: 767px){
     p {
@@ -249,12 +269,12 @@ a:hover{
     footer h6{
         font-size: 1.2vw;
     }
-    footer .icons{
-        width: 130px;
-        margin-top: 2%;
-    }
     footer img{
         width: 60px;
+    }
+    footer .icons{
+        width: 190px;
+        margin-top: 2%;
     }
     .banner {
         margin-top: 0%;
@@ -504,5 +524,23 @@ a:hover{
     }
     .graphic_design p{
         width: 96%;
+    }
+    .next_project{
+
+        height: 28%;
+    }
+    #enjoy_rect{
+        background-color: rgba(183, 25, 143, 0.3);
+        color: rgb(255, 255, 255);
+        width: 40%;
+        padding: 8%;
+    }
+    #next_rect{
+        background-color: rgba(62, 43, 232, 0.3);
+        color: rgb(0, 0, 0);
+        width: 60%;
+        float: right;
+        padding: 5%;
+        margin-top: -10%;
     }
 }

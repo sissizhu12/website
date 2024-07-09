@@ -12,14 +12,14 @@
     letter-spacing: 2px;
 }
 #greeting{
-    font-size: 4rem;
+    font-size: 3.4rem;
     font-weight: bold;
-    padding-left: 35%;
+    padding-left: 38%;
     position: absolute;
     padding-top: 20%;
 }
 .hello_text{
-    padding-left: 15%;
+    padding-left: 14%;
     padding-top: 22%;
     position: relative;
     text-align: left;
@@ -29,17 +29,20 @@
 }
 #top_rect{
     background-color:  rgba(183, 25, 143, .3);
-    width: 110%;
-    height: 8%;
-    margin: 0% 0% -6% -15%;
+    width: 93%;
+    margin-right: 7%;
+    padding-top: 5%;
+    padding-bottom: 2%;
 }
 #bot_rect{
-    width: 95%;
-    height: 15%;
-    margin: -42% 0% 0% -5%;
+    width: 93%;
     background-color:rgba(94, 67, 249, 0.3);
-    position: absolute;
-    z-index: -1;
+    margin-left: 7%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+#bot_rect p{
+    margin-left: -7%;
 }
 #my_work_desktop{
     display: none;
@@ -48,11 +51,12 @@
     font-size: 2.6vw;
     /* letter-spacing: 10px; */
     line-height: 0px;
+    padding: 0%; /*override usual container padding so only text has padding*/
 }
-#my_work_mobile p{
-    display: inline; /*makes text appear on same line as "my work" heading*/
+#my_work_mobile p, #my_work_mobile h2{
     line-height: normal;
     letter-spacing: 0px;
+    padding: 0% 10% 0% 10%;
 }
 #design_philo{
     padding-bottom: 7%;
