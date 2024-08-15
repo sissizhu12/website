@@ -9,6 +9,7 @@ template.innerHTML = `
         <br>
         Copyright © 2023-<span id = "currYear"></span> Sissi Zhu. All Rights Reserved.
         </h6>
+        <br><h4><center><em>want to get in touch?</em></center>
         <div class = "icons">
             <a href="mailto:sissizhu12@gmail.com">
                 <img src="/media/email-icon2.svg" alt="Email letter icon link"/>

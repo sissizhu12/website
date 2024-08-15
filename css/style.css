@@ -57,7 +57,7 @@ header{
     display:none;
 }
 footer{
-    padding: 2% 5% 5% 5%;
+    padding: 3% 5% 5% 5%;
     width: 90%;
     display: inline-block; 
 }
@@ -283,16 +283,16 @@ a:hover{
     }
     footer{
         height: 20vh;
-        margin-bottom: 0%;
+        padding-bottom: 7%; /*increased padding to account for bottom taskbar*/
       }
     footer h6{
         font-size: 1.2vw;
     }
     footer img{
-        width: 60px;
+        width: 4vw;
     }
     footer .icons{
-        width: 190px;
+        width: 15%;
         margin-top: 2%;
     }
     .banner {
