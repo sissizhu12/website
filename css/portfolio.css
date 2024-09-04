@@ -126,6 +126,15 @@
     padding: 1%; /*changes "thickness" of highlighted text*/
     display: inline;
 }
+.design_tag{
+    background-color: rgba(132, 207, 234, .8)
+}
+.research_tag{
+    background-color: rgba(247, 159, 219, .8)
+}
+.coding_tag{
+    background-color: rgba(34, 198, 188, .6)
+}
 #intro{
     display: block;
 }

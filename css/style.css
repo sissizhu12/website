@@ -1,5 +1,8 @@
 /*this a document of core css styling for all the webpages.*/
 /*this chunk is applied to all elements, CSS reset across browsers*/
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+/*imported google font referenced for .popout_text*/
+
 * {
     margin: 0;
     padding: 0;
@@ -51,7 +54,7 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; /*horizontally and vertically centered */
-    color: aliceblue; /*font colour within header*/
+    color: #fdfdfd; /*font colour within header*/
   }
 .desktop_title{
     display:none;
@@ -95,15 +98,12 @@ footer .icons{
     align-items: center;
     justify-content: center;
 }
-#sbl_banner, #utradea_banner{
-    height: 20vh;
-}
 .banner h3{
     font-size: 9vw;
     letter-spacing: 4px;
     font-weight: 500;
     margin-bottom: 6%;
-    color: rgb(242, 226, 255);
+    color: #e9c2fb;
     text-align: center;
 }
 .small_header { /*container for smalll_nav*/
@@ -146,11 +146,54 @@ footer .icons{
 a:hover{
     color:#e9c2fb; /*fyi this doesn't work in firefox*/
 }
+.key_section{
+    /* background-color:red; */
+    width: 90%;
+    margin: 5%;
+    margin-bottom: 0%;
+    position: relative;
+    height: 49%;
+    /*note: truncated height on iPhone SE 2*/
+}
+#sbl_key_section{
+    height: 65%;
+}
+#morya_key_section{
+    height: 60%;
+}
+.key_header{
+    padding: 2%;
+    box-sizing: border-box;
+}
+.keybox1{
+   background-color: rgb(233, 194, 251, .6);
+   width: 97%;
+   height: 95%;
+   position: absolute;
+   z-index: -1;
+}
+.keybox2{
+    background-color: rgb(62, 43, 232,.25);
+    width: 97%;
+    margin-left: 3%;
+    position: absolute;
+    height: 90%; 
+    z-index: -2;
+ }
+ .key_content{
+    z-index: 10;
+    padding: 8%;
+    box-sizing: border-box;
+ }
+ .popout_right_col{
+    color:rgb(80, 51, 91);
+    margin-top: 3%;
+ }
 .project_popout li{
     margin-left: 10%;
 }
 .project_popout{
-    background-color: rgb(238, 196, 250);
+    background-color: rgb(233, 194, 251, .6);
     box-sizing: border-box;
     margin: 5%;
     margin-bottom: 0%;
@@ -162,9 +205,12 @@ a:hover{
     margin-top: 5%
 }
 .popout_text{
-    font-size:1.2rem;
-    color:rgb(128,0,128);
+    font-size: 1.2rem;
     padding: 2%;
+    color:rgba(80, 51, 91);
+    /* font-family: "Abhaya Libre", serif; */
+    /*semibold*/
+    /* font-weight: 600; */
 }
 .body_content img{
     margin: 5% 10% 5% 10%;
@@ -208,7 +254,7 @@ a:hover{
 #enjoy_rect{
     background-color: rgba(183, 25, 143, 0.3);
     color: rgb(255, 255, 255);
-    width: 40%;
+    width: 50%;
     padding: 8%;
     padding-left: 10%;
 }
@@ -301,9 +347,6 @@ a:hover{
         background-position: 75% 50%;
         background-size: 150%;
         z-index: 0;
-    }
-    #sbl_banner, #utradea_banner{
-        height: 25vh;
     }
     .center_headers{
         padding: 2%;
@@ -421,6 +464,48 @@ a:hover{
     #desktop_intro{
         display: visible;
     }
+    .key_section{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 0%;
+        height: 80%;
+    }
+    #sbl_key_section{
+        height: 90%;
+    }
+    #morya_key_section{
+        height: 80%;
+    }
+    .key_header{
+        padding: 1%;
+    }
+    .key_content{
+        padding: 3%;
+        padding-left: 10%;
+        padding-right: 5%;
+    }
+    .keybox1{
+        width: 97%
+    }
+    .keybox2{
+        margin-left: 5%;
+    }
+    .popout_left_col{
+        float: left;
+        width: 50%;
+        line-height: 1.6;
+     }
+    .popout_right_col{
+        float: right;
+        margin-left: 5%;
+        width: 45%;
+        line-height: 1.6;
+        margin-top: 0%;
+     }
+    .center_text{
+        width: 80%
+    }
     .headers{
         width: 100%;
         text-align: center;
@@ -512,16 +597,12 @@ a:hover{
         width: 100%;
         margin-top: 5%;
     }
-    #sbl_user_personas, #sbl_competitors{
+    #sbl_competitors{
         width: 40%;
         padding-left: 20%;
     }
     #sbl_stats_card{
         width: 55%;
-    }
-    #sbl_template{
-        width: 60%;
-        padding-left:10%
     }
     #morya_analysis{
         width: 50%;
