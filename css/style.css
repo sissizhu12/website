@@ -152,8 +152,13 @@ a:hover{
     margin: 5%;
     margin-bottom: 0%;
     position: relative;
-    height: 49%;
+    height: 65%;
     /*note: truncated height on iPhone SE 2*/
+}
+#sbl_personas img, #sbl_stats_card img, #sbl_custom_code img, #morya_personas img{
+    width: 80%;
+    margin: 5%;
+    margin-left: 10%;
 }
 #sbl_key_section{
     height: 65%;
