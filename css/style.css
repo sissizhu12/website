@@ -155,16 +155,23 @@ a:hover{
     height: 65%;
     /*note: truncated height on iPhone SE 2*/
 }
-#sbl_personas img, #sbl_stats_card img, #sbl_custom_code img, #morya_personas img{
+.center_text{
+    width: 100%
+}
+.center_image img{
+    margin: 5% 10% 5% 10%;
+    width: 80%
+}
+/* #sbl_personas img, #sbl_stats_card img, #sbl_custom_code img, morya personas{
     width: 80%;
     margin: 5%;
     margin-left: 10%;
-}
+} */
 #sbl_key_section{
-    height: 65%;
+    height: 75%;
 }
 #morya_key_section{
-    height: 60%;
+    height: 70%;
 }
 .key_header{
     padding: 2%;
@@ -230,8 +237,8 @@ a:hover{
     margin-right: 10%;
 }
 .design_images img{
-    margin: 0% 5% 5% 5%;
-    width: 90%;
+    margin: 0% 10% 5% 10%;
+    width: 80%;
 }
 .graphic_design{
     width: 90%;
@@ -548,9 +555,12 @@ a:hover{
         object-fit: contain;
     }
     .center_image img {
-        margin-left: 15%;
-        margin-bottom: 5%;
-        width: 70%;
+        margin: 0% 20% 5% 20%;
+        width: 60%;
+    }
+    #morya_personas img{
+        margin: 0% 17% 5% 17%;
+        width: 66%;
     }
     .body_content{
         margin-left: 5%;
@@ -562,7 +572,6 @@ a:hover{
     }
     .project_text li, .project_text p{
         /* font-size: 1.2rem; */
-
         padding: 0%;
     }
     .body_content p{
@@ -570,7 +579,7 @@ a:hover{
     }
     .body_content li {
         margin-left: 10%;
-      }
+    }
     #portfolio_last_project_text{
         width:100%;
     }
@@ -578,6 +587,8 @@ a:hover{
         font-weight: 600;
     }
     .design_images img {
+        margin: 0% 5% 5% 5%;
+        width: 90%;
         height: 100%;
         object-fit: contain;
         margin: 0%;
@@ -585,12 +596,12 @@ a:hover{
         width: 100%;
     }
     .image_row{
-        width: 90%;
-        height: 60%;
+        width: 70%;
+        height: 50%;
         margin-bottom: 2%;
         display: flex;
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 15%;
+        margin-right: 15%;
     }
     #earrings_img{
         width: 80%;
@@ -611,19 +622,6 @@ a:hover{
         margin-left: 10%;
         margin-top: 5%;
     }
-    /* #sbl_competitors{
-        width: 40%;
-        padding-left: 20%;
-    } */
-    /* #sbl_stats_card{
-        width: 55%;
-    } */
-    #morya_analysis{
-        width: 40%;
-    }
-    /* #sbl_custom_code_img{
-        width: 50%
-    } */
     #sbl_custom_code_text{
         width: 100%;
     }
