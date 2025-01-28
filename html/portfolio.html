@@ -33,42 +33,50 @@
             <!--semantically, nav bar is a list of links-->
             <ul class = "about"><a href="/index.html">about</a></ul>
             <ul></ul><ul></ul><ul></ul>
-            <ul class = "portfolio"><a href="/html/portfolio.html">portfolio</a></ul>
+            <ul class = "portfolio">
+                <!-- TODO: fix this -->
+                <!-- <img src="/media/nav-bar-icon.svg" height="50px" style="vertical-align: middle;"> -->
+                <a href="/html/portfolio.html" style="vertical-align: middle;">portfolio</a></ul>
             <ul></ul><ul></ul><ul></ul>
             <ul class = "personal"><a href="/html/personal.html">personal</a></ul>
         </nav>
     </div>
 
     <header class= "banner"> 
-        <!-- this shows up on mobile only -->
+        <!-- this text shows up on mobile only -->
         <h3> portfolio</h3>
     </header>
-    <!-- this shows up on desktop only -->
-    <h3 class = "desktop_title"> portfolio</h3>
 
-    <div class="intro_wrapper">
-        <div id = "hello_container"> 
-            <!-- contains background image and text -->
-            <em id = "greeting">hello!</em>
-            <h2 class = "hello_text" class = "text_content">
-                <span>
-                    <br><br>
-                    I'm Sissi, a UI/UX and product designer
-                    creating inclusive, user-friendly design.
-                    I'm committed to strategically driving positive impact for users and emerging organizations.
-                </span>
-            </h2>
-            <br>
-            <div id = "my_work_desktop">
-                <h2 id = "design_philo" style="text-align: left;"><strong><em>my design philosophy</strong></em></h2>
-                <p>comes from my undergraduate studies in <strong><em>psychology, computer science, and visual arts</em></strong> at the University <br> of Toronto.<br><br>I have a strong multidisciplinary
-                understanding of <br><strong><em>human-computer interaction,</em></strong> especially for individuals with disabilities, low vision, or who are neurodivergent.<br><br>
-                additionally, my coding experience allows me to <br><strong><em>better understand technical design constraints</em></strong> and <br>technical language used by coders.
-                </p>
-                </h2>
+    <div id = "intro_container"> 
+        <!-- contains background image and text -->
+        <div id = "greeting">
+            <img src="/media/sketched_stars.svg" alt="" style="width:auto; max-height: 70">
+            <span id = "special"><em>hello! i'm sissi.</em></span>
+        </div>
+        <div class = "intro_text" class = "text_content">
+            <p id ="self_intro">I create <em>accessible</em> and <em>strategic</em> design solutions<br>
+            to help organizations achieve their product goals.</p>
+            </div>
+        <br>
+        <hr class="divider" style=" border-top: 1px solid #000000; width: 80%; margin-left:10%"></div>
+
+        <div id = "my_work_desktop">
+            <p style="text-align: center; margin-bottom: 2%;">My latest impact:</p>
+            <div class="star_bullet">
+                <img src="/media/star-bullet-icon.png">
+                <p>12% increase in website engagement</p>
+            </div>
+            <div class="star_bullet">
+                <img src="/media/star-bullet-icon.png">
+                <p>38% increase in time on website homepage</p>
+            </div>
+            <div class="star_bullet">
+                <img src="/media/star-bullet-icon.png">
+                <p>2.7% increase in returning users</p>
             </div>
         </div>
-    </div> 
+
+        <img id="down_arrow" src="/media/down-arrow.svg">
 
     <div id = "my_work_mobile" class="text_content">
         <div id="top_rect">
@@ -86,8 +94,7 @@
     </div>
     
     <div class = "headers">
-        <h3 id ="tab_of_contents">table of contents</h3>
-        <h2 class ="center_headers" style="padding-top: 2%;"><em>case studies</em></h2>
+        <h3 class ="center_headers" style="padding-top: 5%;">case studies</h3>
     </div>
 
     <div class = "projects">
@@ -161,7 +168,7 @@
             </div>
         </div>
 
-        <h2 class ="center_headers"style="margin-top: 2%;"><em>portfolio</em></h2>
+        <h3 class ="center_headers"style="margin-top: 2%;">portfolio</h3>
 
         <div class = "project_row">
             <!--graphic design-->

@@ -1,35 +1,50 @@
 /*this is a document of css styling for the portfolio page.*/
-#hello_container{
+#intro_container{
     position: relative; 
-    width: 100%;
-    height: 80%;
-    background-image: url("../media/galaxy_watercolor\ .JPG");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center; /*horizontally and vertically centered */
-    box-shadow: 0 0 30px 40px rgb(205, 148, 252) inset;
-    color:white;
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    color:rgb(0, 0, 0);
     letter-spacing: 2px;
+    box-sizing: border-box;
 }
 #greeting{
-    font-size: 3.4rem;
-    font-weight: bold;
-    padding-left: 38%;
-    position: absolute;
-    padding-top: 30%;
-    transform: rotate(-2deg);
+    margin-top: 10%;
+    text-align: center;
+    box-sizing: border-box;
+    height: auto;
+    font-size: 2rem;
 }
-.hello_text{
-    padding-left: 14%;
-    padding-top: 40%;
-    position: relative;
-    text-align: left;
+#special{
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+#greeting img{
+    height: 40;
+}
+.intro_text{
+    padding-left: 10%;
     width: 90%;
+    text-align: center;
     box-sizing: border-box;
     font-size: 1.2rem;
 }
-.hello_text span{
-    background-color: rgb(95, 43, 118);
+#self_intro{
+    line-height: 1.2em;
+}
+.star_bullet{
+    margin-left: 10%;
+}
+.star_bullet p{
+    display: inline;
+    vertical-align: middle;
+}
+.star_bullet img{
+    height: 16;
+    vertical-align: middle;
+}
+#down_arrow{
+    display: none;
 }
 #top_rect{
     background-color:  rgba(183, 25, 143, .3);
@@ -48,14 +63,26 @@
 #bot_rect p{
     margin-left: -7%;
 }
-#my_work_desktop{
-    display: none;
-}
+
 #my_work_mobile{
     font-size: 2.6vw;
     /* letter-spacing: 10px; */
+    margin-top: 5%;
     line-height: 0px;
     padding: 0%; /*override usual container padding so only text has padding*/
+    display:none;
+    /*TODO: update this non-display, rename containers*/
+}
+#my_work_desktop{
+    display: block;
+    line-height: 0px;
+    word-spacing: .2rem;
+    width: 90%;
+    box-sizing: border-box;
+    margin-left: 5%;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 #my_work_mobile p, #my_work_mobile h2{
     line-height: normal;
@@ -64,11 +91,6 @@
 }
 #design_philo{
     padding-bottom: 7%;
-}
-#tab_of_contents{
-    margin-top: 10%;
-    margin-bottom: 0%;
-    padding: 0;
 }
 .projects{
     width: 90%;
@@ -175,20 +197,28 @@
         padding-bottom: 1%;
     }
     #greeting{
-        padding-top: 7%;
-        padding-left: 38%;
-        font-size: 5vw;
-        transform: rotate(0deg);
+        margin-top: 5%;
+        letter-spacing: .6rem;
     }
-    #hello_container{
-        height: 230%;
-        background-position: 0% 80%;
+    #special{
+        font-size: 4rem;
     }
-    .hello_text{
-        padding-left: 25%;
-        padding-top: 9%;
-        width: 76%;
-        font-size: 2.2vw;
+    #greeting img{
+        height: 70;
+    }
+    .intro_text{
+        width: 90%;
+    }
+    #self_intro{
+        line-height: 1.8em;
+    }
+    .star_bullet{
+        margin-left: 12%;
+    }
+    #down_arrow{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
     }
     #top_rect{
         float: left;
@@ -210,16 +240,11 @@
         display: none;
     }
     #my_work_desktop{
-        display: block;
-        line-height: 0px;
-        word-spacing: .2rem;
-        width: 55%;
-        box-sizing: border-box;
-        padding: 2%;
-        margin-left: 23%;
-        margin-top: 5%;
-        background-color:rgb(95, 43, 118, .9);
-        box-shadow: 0 0 30px 40px rgb(255, 255, 255, 0.2);
+        width: 40%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        margin-left: auto;
+        margin-right: auto;
     }
    #design_philo{
         padding-bottom: 3%;
@@ -230,10 +255,6 @@
    #product_header{
         display:none
    }
-   #tab_of_contents{
-        margin-bottom: 0%;
-        margin-top: 3%;
-    }
     .project_description{
         padding-top:2%;
     }
