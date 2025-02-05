@@ -22,34 +22,59 @@
 
         <nav>
             <!--semantically, nav bar is a list of links-->
-            <ul class = "about" style="text-align: center;"><a href="#about_anchor">about</a></ul>
+            <ul class = "about" style="text-align: center;">
+                <!-- TODO: fix this on desktop and mobile-->
+                <!-- <img src="/media/nav-bar-icon.svg" height="20px" style="vertical-align: middle;"> -->
+                <a href="#about_anchor">about</a></ul>
             <ul></ul><ul></ul><ul></ul>
             <ul class = "portfolio"> <a href="/html/portfolio.html">portfolio</a></ul>
             <ul></ul><ul></ul><ul></ul>
-            <ul class = "personal"><a href="/html/personal.html">personal</a></ul>
+            <ul><a href="html/blog.html">blog</a></ul>
         </nav>
 
         <a href="#about_anchor">
-            <img id = "scrollDown" src ="media/scroll-icon.svg" alt = "scroll down! icon">
+            <img id = "scrollDown" src ="media/down-arrow.svg" alt = "White arrow down icon.">
         </a>
     </header>
 
     <!--about section, cta at bottom of page--> 
     <section id = "aboutSection">
         <h3 id = "about_anchor">about</h2>
-        <div id = "top_rect"></div>
-        <img src = "media/profile-pic.jpg" id = "pfp" alt = "a girl with black hair, red sunglasses, and closed eyes standing outside with a grey zip up jacket and trees in the background." width = 100%>
-        <div id = "bot_rect"></div>
-        <p id = "about_text">
-        lover of the asymmetric and ethereal. spends too many hours thinking about the accessibility of 
-        everyday environments and objects (digital and tangible).<br><br>
-        always learning and exploring new modes of creativity and storytelling, whether it be through books, videos, or open dialogue with other people.
-        </p>
+        <div id = "image_container">
+            <div id = "top_rect"></div>
+            <img src = "media/profile-pic.jpg" id = "pfp" alt = "a girl with black hair, red sunglasses, and closed eyes standing outside with a grey zip up jacket and trees in the background." width = 100%>
+            <div id = "bot_rect"></div>
         </div>
 
-        <div id = "rect1"></div>
-        <div id = "rect2"></div>
+        <div id = "about_text">
+            <p>lover of the asymmetric and ethereal. spends many hours thinking about the accessibility of 
+            everyday environments and objects (digital and physical).<br><br>
+            always learning and exploring new modes of creativity and storytelling though books, 
+            <a href="https://vimeo.com/sissizhu" style="color:black; text-decoration: underline;">film,</a> and open dialogue with people.
+            <!-- TODO: fix this link being white -->
+            </p>
+        </div>
+
+        <!-- <div class = "video_embeds">
+            <div id ="film" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/902566401?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:10%;width:80%;height:100%;" title="Labour of Love"></iframe></div><script src="https://player.vimeo.com/api/player.js" alt="short film thumbnail with a painting of colour swatches on a white wall"></script>
+            <div class = "iframe_wrapper">
+                <iframe title="youtube video with red glasses thumbnail" padding="10%" width="80%" height="200" src="https://www.youtube.com/embed/RcUMgGXZWyc?si=bR7xGyfQ5ngVYkoa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div> -->
     </section>
+
+    <div id = "my_design_philo">
+        <div id="highlight_rect1">
+            <h2 id = "design_philo" style="text-align: left;">my design philosophy</h2>
+        </div>
+        <p>comes from my bachelor's in <em>psychology, computer science,</em> and <em>visual arts</em> from the University of Toronto.<br><br>
+        <div id="highlight_rect2">
+            <p>I have a strong multidisciplinary understanding of <em>human-computer interaction</em>, especially for people
+            with disabilities or who are neurodivergent.<br>
+            </p>
+        </div>
+        <p><br>additionally, my coding experience allows me to <em>better understand technical design constraints</em> and technical language used by coders.</p>
+    </div>
 
     <div id = "cta">
         <div class ="cta_text">

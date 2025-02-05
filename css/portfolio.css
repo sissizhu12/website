@@ -46,34 +46,7 @@
 #down_arrow{
     display: none;
 }
-#top_rect{
-    background-color:  rgba(183, 25, 143, .3);
-    width: 93%;
-    margin-right: 7%;
-    padding-top: 5%;
-    padding-bottom: 2%;
-}
-#bot_rect{
-    width: 93%;
-    background-color:rgba(94, 67, 249, 0.3);
-    margin-left: 7%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
-#bot_rect p{
-    margin-left: -7%;
-}
-
-#my_work_mobile{
-    font-size: 2.6vw;
-    /* letter-spacing: 10px; */
-    margin-top: 5%;
-    line-height: 0px;
-    padding: 0%; /*override usual container padding so only text has padding*/
-    display:none;
-    /*TODO: update this non-display, rename containers*/
-}
-#my_work_desktop{
+#my_stats{
     display: block;
     line-height: 0px;
     word-spacing: .2rem;
@@ -83,14 +56,6 @@
     margin-right: auto;
     margin-top: 5%;
     margin-bottom: 5%;
-}
-#my_work_mobile p, #my_work_mobile h2{
-    line-height: normal;
-    letter-spacing: 0px;
-    padding: 0% 10% 0% 10%;
-}
-#design_philo{
-    padding-bottom: 7%;
 }
 .projects{
     width: 90%;
@@ -178,12 +143,6 @@
     .project_container{
         height: 60%;
     }
-    #bot_rect{
-        margin-top: -32%;
-    }
-    #my_work_mobile{
-        padding-bottom: 10%;
-    }
 }
 
 /*formatting for desktop*/
@@ -216,42 +175,18 @@
         margin-left: 12%;
     }
     #down_arrow{
-        display:block;
+        display: block;
         margin-left: auto;
         margin-right: auto;
+        opacity: .5
     }
-    #top_rect{
-        float: left;
-        width: 50%;
-        height: 15%;
-        margin-top: 3%;
-        margin-left: 25%;
-        background-color:rgba(246, 22, 205, 0.3);
-    }
-    #bot_rect{
-        float: right;
-        width: 10%;
-        height: 15%;
-        margin-top: -10%;
-        margin-right: 20%;
-        background-color:rgb(95, 43, 118, 0.3);
-    }
-    #my_work_mobile{
-        display: none;
-    }
-    #my_work_desktop{
+    #my_stats{
         width: 40%;
         margin-top: 2%;
         margin-bottom: 2%;
         margin-left: auto;
         margin-right: auto;
     }
-   #design_philo{
-        padding-bottom: 3%;
-        padding-top: 3%;
-        font-weight: bold;
-        font-size: 3vw;
-   }
    #product_header{
         display:none
    }

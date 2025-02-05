@@ -1,0 +1,88 @@
+<!-- TODO: write js inject for headers later on -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sissi Zhu </title>
+    <link rel="icon" type="image/x-icon" href="/media/favicon.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/footer.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <div class = "small_header"><h3>sissi zhu</h3>
+        <div class = small_nav>
+            <ul><a href="../index.html">about</a></ul>
+            <hr width="1" height="100%"/>
+            <ul><a href="../html/portfolio.html">portfolio</a></ul>
+            <hr width="1" height="100%"/>
+            <ul><a href="blog.html">blog</a></ul>
+        </div>
+    </div>
+
+    <div id = "left_rect">
+        <p id ="name">sissi zhu<p>
+        <!-- <p id = "role">UI/UX & PRODUCT DESIGNER</p> -->
+    </div>
+
+    <div id = "right_rect">
+        <nav>
+            <!--semantically, nav bar is a list of links-->
+            <ul class = "about"><a href="/index.html">about</a></ul>
+            <ul></ul><ul></ul><ul></ul>
+            <ul class = "portfolio">
+                <!-- TODO: fix this on desktop and mobile, maybe use classes for styling? debug padding-->
+                <!-- <img src="/media/nav-bar-icon.svg" height="20px" style="vertical-align: bottom;"> -->
+                <a href="/html/portfolio.html" style="vertical-align: middle;">portfolio</a></ul>
+            <ul></ul><ul></ul><ul></ul>
+            <ul class = "blog"><a href="/html/blog.html">blog</a></ul>
+        </nav>
+    </div>
+
+    <header class= "banner"> 
+        <!-- this text shows up on mobile only -->
+        <h3> portfolio</h3>
+    </header>
+
+    <div class="body_text">
+        <h1><br>how I designed (and coded) this site to be accessible</h1>
+        <p>Last updated: February 04, 2025 <br> 2 min read <br><br>
+        <img src="/media/blog_posts/my_website/figma_screenshot.PNG" alt="hi" width="100%">
+        <p>When creating this portfolio website from scratch, my initial goal was to leverage the
+        full creative freedom to design and code a unique portfolio. I wanted to not only showcase my case
+        studies and design skills, but also learn more about website navigation, design, and
+        digital accessibility.</p>
+        <p>Here's 3 ways I paid attention to accessibility, ordered in terms of impact.
+        Notice visual design is not the first, because truly accessible design does not end at interface design.</p>
+
+        <p>1. Code structure <br>
+        Every so often, I update my knowledge of accessibility guidelines and website code best practices.
+        And every so often, I improve my code to reflect my better understanding of WCAG and the lived experiences of people with disabilities.
+        Moreover, when I first learned the basics of front-end coding 8 years ago, HTML and CSS looked very different then; another reason
+        to review code to keep up with both technical and accessibility practices.</p>
+
+        <p>2. Information architecture<br>
+        Websites should be easy to navigate, whether it by sight, screenreader, or selection switches.
+        With this mind, I spent time considering different ways to organize the site and minimize needing
+        too many clicks to jump between webpages. This also included intentional content hierarchy on individual webpages,
+        where high priority information lives closer to the top of the page.</p>
+
+        <p>3. Interface design<br>
+        Knowing about colour contrast and readable font styles is necessary as a designer, but it doesn't stop there.
+        How is information being delivered? Is it through text, image, or video content? And is there a way to
+        communicate information through more than one medium for accessibility? These are all questions I considered
+        when designing this website, which is by all means not perfect, but getting there. 
+        </p>
+
+        <img src="/media/blog_posts/my_website/cycle.png" width="100%">
+        <p>An unexpected outcome of crafting this site:
+        Because I conducted all UX research, designing, and coding, I saw hidden connections
+        between each role. This led me to better understand the worlds of design and code
+        as collaborative rather than independent.</p>
+        <p>This project made me appreciate both sides more, as I often moved back and forth between designing and
+        coding, giving me new insights from one role to support the other. For instance, I found annotated sketches to be
+        helpful visual guides for updating webpages. As a result, I also learned first-hand the communication value
+        of clear design documentation for handoff to coders, and it motivates me to keep my developers on the same page for every project I take on.</p>
+    </div>
+</body>

@@ -39,19 +39,16 @@ nav ul{
   text-align: center;
 }
 #scrollDown{
-  opacity: .4;
+  opacity: .6;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 30%;
-  width: 15%;
-  transform: translate(0px, 75vh);
+  width: 8%;
+  /* transform: translate(0px, 90vh); */
+  padding-top: 92vh;
 }
 #aboutSection{
-  padding: 5% 10% 0% 10%; /*left and right padding*/
-}
-#about_text{
-  padding: 5%;
+  padding: 5% 10% 5% 10%;
 }
 #cta{ 
   background-color: rgba(7, 7, 7, 0.4);
@@ -62,11 +59,10 @@ nav ul{
   box-sizing: border-box;
 }
 .cta_text{
-  padding: 0% 5% 5% 5%;
   box-sizing: border-box;
-  margin-left: 13%;
   color: white;
   width: 80%;
+  margin-left: 10%;
 }
 #cta_opening{
   font-size: 1.4rem
@@ -105,7 +101,41 @@ nav ul{
   height: 6%;
   margin: -8% 0% 5% 5%;
 }
-
+#my_design_philo{
+  font-size: 2.6vw;
+  /* letter-spacing: 10px; */
+  line-height: 0px;
+  padding: 0%; /*override usual container padding so only text has padding*/
+}
+#my_design_philo p, #my_design_philo h2{
+  line-height: normal;
+  letter-spacing: 0px;
+  padding: 0% 10% 0% 10%;
+}
+#design_philo{
+  padding-bottom: 7%;
+}
+#highlight_rect2 p{
+  padding: 4%;
+}
+#highlight_rect1{
+  background-color:  rgba(183, 25, 143, .3);
+  width: 93%;
+  margin-right: 7%;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  margin-bottom: 2%;
+}
+#highlight_rect2{
+  width: 93%;
+  background-color:rgba(94, 67, 249, 0.3);
+  margin-left: 7%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+#highlight_rect1 p{
+  margin-left: -7%;
+}
 /*medium breakpoint for tablets and some iPads*/
 @media (min-width: 576px) and (max-width: 767px){
   /*for debugging purposes*/
@@ -143,10 +173,6 @@ nav ul{
 
 /*formatting for larger iPads*/
 @media (min-width: 768px) and (max-width: 1024px){
-  /*for debugging purposes*/
-  /* body{
-    background-color: darkseagreen; 
-  } */
   nav{
     font-size: 1.8rem;
   }
@@ -168,6 +194,9 @@ nav ul{
   }
   #cta p{
     font-size: 1.4rem;
+  }
+  #my_design_philo{
+    padding-bottom: 10%;
   }
 }
 
@@ -201,8 +230,6 @@ nav ul{
     display: grid;
     padding: 2% 5% 5% 15%;
     box-sizing: border-box; /*keeps nav bar width the same*/
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
   }
   #scrollDown{
     opacity: 0.4;
@@ -214,49 +241,76 @@ nav ul{
     letter-spacing: 1vw;
     font-size: 4vw;
   }
-  .aboutSection{
-    padding: 5% 0% 5% 0%;
-    height: 20%;
-  }
   #pfp{
-    width: 50%;
+    width: 100%;
     padding: 5% 0% 5% 0%;
     float: right;
   }
   #about_text{
     text-align: left;
     line-height: normal;
-    float: left;
-    width: 30%;
-    padding: 5% 0% 5% 14%;
-    margin-top: -20%;
+    width: 35%;
+    padding: 5% 10% 5% 10%;
+    margin-top: 3%;
   }
   #cta{
     padding: 0;
-    margin-top: -10%;
-    margin-bottom: 0%;
     margin-left: 10%;
+    width: 80%;
+  }
+  #my_design_philo{
+    margin-top: 3%;
+  }
+  #my_design_philo h2{
+    margin: 0% 0% 0% 15%;
+  }
+  #my_design_philo p {
+    margin: 0% 8% 0% 8%;
+    width: 75%;
+  }
+  #highlight_rect2 p{
+    margin: 0% 5% 0% 8%;
+    padding: 0%;
+    width: 80%
+  }
+  #highlight_rect1{
+    width: 70%;
+    margin-left: 0%;
+    /* background-color:rgba(246, 22, 205, 0.3); */
+    padding: 2% 0% 2% 0%;
+
+  }
+  #highlight_rect2{
     width: 90%;
-    position: relative;
+    margin-left: 10%;
+    padding: 2% 0% 2% 0%;
+    background-color:rgb(95, 43, 118, 0.3);
   }
   .cta_text{
-    margin-top: -10%;
-    padding: 5% 0% 5% 10%;
+    padding: 5%;
+    text-align: center;
   }
   #cta_opening{
     font-size: 2vw;
   }
+  #image_container{
+    float: right;
+    display: block;
+    padding: 0% 5% 0% 5%;
+    width: 40%;
+  }
   #top_rect{
     background-color:  rgba(183, 25, 143, 0.3);
-    width: 10%;
+    width: 20%;
     height: 8%;
-    margin: 5% 0% -10% -8%;
+    float: left;
   }
   #bot_rect{
     background-color: rgba(62, 43, 232, 0.3);
-    width: 10%;
-    height: 10%;
-    margin: 3% 0% 15% 95%;
+    width: 20%;
+    height: 8%;
+    float: right;
+    margin: -10% -5% 0% 5%;
   }
   #rect1{
     background-color:rgba(119, 32, 206, 0.3);
@@ -271,10 +325,13 @@ nav ul{
     margin: 45% 0% 0% -5%;
   }
   #small_rect{
-    background-color: rgba(183, 25, 143, 0.3);
-    width: 15%;
-    height: 8%;
-    margin: -20% 0% 0% 70%;
+    background-color: rgba(62, 43, 232, 0.3);
+    width: 10%;
+    height: 12%;
+    margin: -18% 0% 0% 8%;
+  }
+  #aboutSection{
+    padding-bottom: 2%;
   }
   footer{
     margin-top: 16%; /*note this only applies to desktop home page*/

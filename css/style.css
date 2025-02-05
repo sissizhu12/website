@@ -14,7 +14,13 @@ body{
     font-family: "Times New Roman", Times, Georgia, serif;
 }
 .text_content{
-    padding: 5% 10% 0% 10%;
+    margin: 0% 15% 0% 15%;
+}
+.body_text{
+    margin: 0% 10% 0% 10%;
+}
+.body_text p, .body_text h1, .body_text img{
+    margin-top: 5%;
 }
 h1{/*left aligned subheaders within section*/
     text-align: left;
@@ -336,6 +342,12 @@ a:hover{
 
 /*formatting for desktop*/
 @media (min-width: 1025px){
+    .body_text{
+        margin: 0% 15% 0% 15%;
+    }
+    .body_text p, .body_text h1, .body_text img{
+        margin-top: 2%;
+    }
     #top_button h6{
         font-size: 1.6vw;
     }
@@ -431,9 +443,6 @@ a:hover{
     #role{
         font-size: 2vw;
         margin-top: 0%;
-    }
-    .text_content{
-        padding-top: 0%;
     }
     p, li{
         font-size: 1.6vw;
