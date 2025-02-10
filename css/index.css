@@ -224,11 +224,11 @@ nav ul{
   }
   nav{
     font-size: 2.2vw;
-    height: 25%;
+    height: auto;
     width: 55%;
-    top: 60%;
+    top: 65%;
     display: grid;
-    padding: 2% 5% 5% 15%;
+    padding: 2% 5% 2% 15%;
     box-sizing: border-box; /*keeps nav bar width the same*/
   }
   #scrollDown{
@@ -249,7 +249,7 @@ nav ul{
   #about_text{
     text-align: left;
     line-height: normal;
-    width: 35%;
+    width: 30%;
     padding: 5% 10% 5% 10%;
     margin-top: 3%;
   }
@@ -266,19 +266,18 @@ nav ul{
   }
   #my_design_philo p {
     margin: 0% 8% 0% 8%;
-    width: 75%;
+    width: 60%
   }
   #highlight_rect2 p{
     margin: 0% 5% 0% 8%;
     padding: 0%;
-    width: 80%
+    width: 70%
   }
   #highlight_rect1{
     width: 70%;
     margin-left: 0%;
     /* background-color:rgba(246, 22, 205, 0.3); */
     padding: 2% 0% 2% 0%;
-
   }
   #highlight_rect2{
     width: 90%;
