@@ -122,6 +122,11 @@
 .industry_tag{
     background-color: rgba(34, 198, 188, .6)
 }
+#newline_tag{
+    display: inline-block;
+    margin-top: .4rem;
+    margin-bottom: 0;
+}
 #intro{
     display: block;
 }
@@ -214,6 +219,9 @@
         margin-top: 0%;
         display: inline-block;
    }
+    #newline_tag{
+        display: inline;
+    }
    .project_row{
         width: 100%;
         height: auto;
